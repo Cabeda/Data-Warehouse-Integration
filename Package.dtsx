@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{F9124180-287C-4257-B1E4-2189D316EB3A}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{FD00DFD1-BCDE-4885-A89A-7E52425ED522}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1041,6 +1041,10 @@
           Size="235,109"
           Id="Package\Foreach Staging Area Script"
           TopLeft="104,160" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Load Staging Tables"
+          TopLeft="130,304" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="219,75">
@@ -1063,10 +1067,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Load Staging Tables"
-          TopLeft="130,304" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="219.25,269">
@@ -1191,7 +1191,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Staging Tables\Armazens">
+    design-time-name="Package\Load Staging Tables\Insert into Categorias SA">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1230,7 +1230,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Staging Tables\Insert into Categorias SA">
+    design-time-name="Package\Load Staging Tables\Zonas">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1243,7 +1243,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Staging Tables\Zonas">
+    design-time-name="Package\Load Staging Tables\Armazens">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
