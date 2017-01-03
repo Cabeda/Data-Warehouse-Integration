@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="LYNX\Paulo" GeneratedFromPackageName="Package" GeneratedFromPackageID="{9BDDBD42-60D5-4ADB-A0B2-C28886DF290C}" GeneratedDate="26/10/2016 21:20:11"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DataMartBDName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>DM_1160083</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PackagePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\ISEP\ARPAD\PL\Data Mart</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ServerName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>WKSCARLOSRIBEI\CR_MSSQLSERVER</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::StagingAreaDBName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>SA_1160083</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>
