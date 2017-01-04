@@ -12,8 +12,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="40"
-  DTS:VersionGUID="{46F78E48-77CB-479E-A4CB-18D2160F0165}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{854E9B00-94EF-4DC9-AD87-106AFD092B3D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -187,13 +187,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Foreach Data Mart Script"
+      DTS:refId="Package\Foreach Data MartScript"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
       DTS:DTSID="{E8094C72-00C4-4836-9D6D-28BF5754AB53}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Foreach Data Mart Script">
+      DTS:ObjectName="Foreach Data MartScript">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
         DTS:DTSID="{D41D85FD-1D99-46CA-909C-948A4062E766}"
@@ -11103,7 +11103,7 @@
       DTS:From="Package\Create Data Mart Database"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
-      DTS:To="Package\Foreach Data Mart Script" />
+      DTS:To="Package\Foreach Data MartScript" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -11118,9 +11118,20 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="207,42"
+          Id="Package\Create Data Mart Database"
+          TopLeft="665,86" />
+        <NodeLayout
           Size="220,42"
           Id="Package\Create Staging Area Database"
           TopLeft="347,91" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="219,55"
+          Size="219,98"
+          Id="Package\Foreach Data MartScript"
+          TopLeft="654,216" />
         <NodeLayout
           Size="173,44"
           Id="Package\Foreach Staging Area  Script\Execute Create Table Script"
@@ -11284,17 +11295,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="207,42"
-          Id="Package\Create Data Mart Database"
-          TopLeft="665,86" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="219,55"
-          Size="219,98"
-          Id="Package\Foreach Data Mart Script"
-          TopLeft="654,216" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="766,128">
