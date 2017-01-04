@@ -13,7 +13,7 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:VersionBuild="44"
-  DTS:VersionGUID="{11178B92-FA5D-4C7E-86EA-E408DD8FD106}">
+  DTS:VersionGUID="{24DEAC75-C41A-4F9A-9119-B1FA37E07C21}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -187,13 +187,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Foreach Data MartScript"
+      DTS:refId="Package\Foreach Data Mart Script"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
       DTS:DTSID="{E8094C72-00C4-4836-9D6D-28BF5754AB53}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Foreach Data MartScript">
+      DTS:ObjectName="Foreach Data Mart Script">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
         DTS:DTSID="{D41D85FD-1D99-46CA-909C-948A4062E766}"
@@ -11103,7 +11103,7 @@
       DTS:From="Package\Create Data Mart Database"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
-      DTS:To="Package\Foreach Data MartScript" />
+      DTS:To="Package\Foreach Data Mart Script" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -11128,9 +11128,9 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="219,55"
-          Size="219,98"
-          Id="Package\Foreach Data MartScript"
+          PanelSize="223,55"
+          Size="223,98"
+          Id="Package\Foreach Data Mart Script"
           TopLeft="654,216" />
         <NodeLayout
           Size="173,44"
@@ -11297,7 +11297,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="766,128">
+          TopLeft="767,128">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
