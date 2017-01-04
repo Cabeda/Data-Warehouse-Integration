@@ -8,12 +8,12 @@
   DTS:DTSID="{CAB6339B-EA84-4F12-96FB-3A9F6D79D8FC}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.2164.0"
+  DTS:LastModifiedProductVersion="13.0.2165.0"
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="43"
-  DTS:VersionGUID="{854E9B00-94EF-4DC9-AD87-106AFD092B3D}">
+  DTS:VersionBuild="46"
+  DTS:VersionGUID="{BCC19962-D1EC-45C8-879C-A32A64315DCF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -187,13 +187,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Foreach Data MartScript"
+      DTS:refId="Package\Foreach Data Mart  Script"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
       DTS:DTSID="{E8094C72-00C4-4836-9D6D-28BF5754AB53}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Foreach Data MartScript">
+      DTS:ObjectName="Foreach Data Mart  Script">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
         DTS:DTSID="{D41D85FD-1D99-46CA-909C-948A4062E766}"
@@ -11103,7 +11103,7 @@
       DTS:From="Package\Create Data Mart Database"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
-      DTS:To="Package\Foreach Data MartScript" />
+      DTS:To="Package\Foreach Data Mart  Script" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -11118,63 +11118,63 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="207,42"
+          Size="207.2,41.6"
           Id="Package\Create Data Mart Database"
           TopLeft="665,86" />
         <NodeLayout
-          Size="220,42"
+          Size="220,41.6"
           Id="Package\Create Staging Area Database"
           TopLeft="347,91" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="219,55"
-          Size="219,98"
-          Id="Package\Foreach Data MartScript"
+          PanelSize="219.2,55.2"
+          Size="223.2,98.4"
+          Id="Package\Foreach Data Mart  Script"
           TopLeft="654,216" />
         <NodeLayout
-          Size="173,44"
+          Size="172.8,44"
           Id="Package\Foreach Staging Area  Script\Execute Create Table Script"
           TopLeft="34,7" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="236,66"
-          Size="236,109"
+          PanelSize="236,65.6"
+          Size="236,108.8"
           Id="Package\Foreach Staging Area  Script"
           TopLeft="308,220" />
         <NodeLayout
-          Size="219,42"
+          Size="219.2,41.6"
           Id="Package\Load Common Staging Tables"
           TopLeft="67.4444444444444,310.444444444444" />
         <NodeLayout
-          Size="195,42"
+          Size="195.2,41.6"
           Id="Package\Load MaisRitmo Staging Tables\Load heavy Staging Tables"
           TopLeft="16.4444444444443,50.1111111111111" />
         <NodeLayout
-          Size="195,42"
+          Size="195.2,41.6"
           Id="Package\Load MaisRitmo Staging Tables\Load soft Staging Tables"
           TopLeft="15.2222222222222,4.5" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="232,100"
-          Size="232,143"
+          Size="232,143.2"
           Id="Package\Load MaisRitmo Staging Tables"
           TopLeft="388.777777777778,431" />
         <NodeLayout
-          Size="191,42"
+          Size="191.2,41.6"
           Id="Package\Load MaisSom Staging Tables\Load heavy Staging Tables"
           TopLeft="23.1111111111111,59" />
         <NodeLayout
-          Size="195,42"
+          Size="195.2,41.6"
           Id="Package\Load MaisSom Staging Tables\Load soft Staging Tables"
           TopLeft="19.9444444444445,5.61111111111109" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="235,114"
-          Size="235,157"
+          PanelSize="235.2,113.6"
+          Size="235.2,156.8"
           Id="Package\Load MaisSom Staging Tables"
           TopLeft="100.111111111111,417.111111111111" />
         <EdgeLayout
@@ -11297,18 +11297,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="766,128">
+          TopLeft="766.1,127.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,88"
+              EndConnector="0,88.4"
               Start="0,0"
-              End="0,80.5">
+              End="0,80.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,80.5" />
+                    End="0,80.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
