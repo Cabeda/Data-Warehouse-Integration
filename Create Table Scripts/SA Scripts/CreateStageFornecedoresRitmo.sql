@@ -15,7 +15,7 @@ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'FornecedoresRitmo')
 		[vencimento] [numeric](3, 0) NOT NULL,
 		[funcaocontacto] [varchar](15) NOT NULL,
 		[email] [varchar](45) NOT NULL,
-		[nacionalidade] [varchar](20) NOT NULL,
+		[nacionalidade] [varchar](40) NOT NULL,
 		[telemovel] [varchar](45) NOT NULL,
 		[saldo] [numeric](19, 6) NOT NULL,
 		[plafond] [numeric](19, 6) NOT NULL,
