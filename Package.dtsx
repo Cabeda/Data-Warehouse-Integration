@@ -12,8 +12,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="45"
-  DTS:VersionGUID="{AF2DE473-6F22-4B00-BCA2-E56458F0F243}">
+  DTS:VersionBuild="53"
+  DTS:VersionGUID="{8765C54B-8A11-4C0E-A2DC-26E1E8EDAD76}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -43,6 +43,10 @@
       DTS:CreationName="OLEDB"
       DTS:DTSID="{E779DFCD-BCFB-4AAB-938B-01D757E8B655}"
       DTS:ObjectName="MaisRitmo">
+      <DTS:PropertyExpression
+        DTS:Name="InitialCatalog">@[User::MaisRitmoDBName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[User::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=WKSCARLOSRIBEI\CR_MSSQLSERVER;Initial Catalog=MaisRitmo;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
@@ -53,6 +57,10 @@
       DTS:CreationName="OLEDB"
       DTS:DTSID="{0BEC26E5-6F64-4886-A6CA-F69E633F99A7}"
       DTS:ObjectName="MaisSom">
+      <DTS:PropertyExpression
+        DTS:Name="InitialCatalog">@[User::MaisSomDBName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[User::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=WKSCARLOSRIBEI\CR_MSSQLSERVER;Initial Catalog=MaisSom;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
@@ -63,6 +71,8 @@
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
       DTS:DTSID="{1FC673A7-0EAA-4C8C-AC02-879495E05E4D}"
       DTS:ObjectName="master">
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[User::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=WKSCARLOSRIBEI\CR_MSSQLSERVER;Initial Catalog=master;Integrated Security=True;Application Name=SSIS-Package-{1FC673A7-0EAA-4C8C-AC02-879495E05E4D}WKSCARLOSRIBEI\CR_MSSQLSERVER.master;" />
@@ -71,14 +81,33 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Staging Area]"
       DTS:CreationName="OLEDB"
+      DTS:DelayValidation="True"
       DTS:DTSID="{D6BCF647-4026-4997-BA97-1D74E3FEF1D7}"
       DTS:ObjectName="Staging Area">
+      <DTS:PropertyExpression
+        DTS:Name="InitialCatalog">@[User::StagingAreaDBName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[User::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=WKSCARLOSRIBEI\CR_MSSQLSERVER;Initial Catalog=SA_1130395_1160083;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:Configurations>
+    <DTS:Configuration
+      DTS:ConfigurationString="D:\ISEP\ARPAD\Trabalho prático\1130395_1160083\1130395_1160083\Package Configurations.dtsConfig"
+      DTS:ConfigurationType="1"
+      DTS:CreationName=""
+      DTS:DTSID="{0C54D972-9E01-42FF-BAA1-D4EA3704EB99}"
+      DTS:ObjectName="Package Configuration" />
+    <DTS:Configuration
+      DTS:ConfigurationString="ARPAD_DataMart"
+      DTS:ConfigurationType="5"
+      DTS:CreationName=""
+      DTS:DTSID="{2C30E3A5-9EC3-4B87-AF61-E9215937E88A}"
+      DTS:ObjectName="Package Configuration EV" />
+  </DTS:Configurations>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
@@ -98,6 +127,24 @@
       <DTS:VariableValue
         DTS:DataType="8"
         xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7732140E-323E-4E88-8E1B-412F42D9CAF4}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="MaisRitmoDBName">
+      <DTS:VariableValue
+        DTS:DataType="8">MaisRitmo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5BB0FF7F-1A10-42E9-BAB6-C47ECC59F1C3}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="MaisSomDBName">
+      <DTS:VariableValue
+        DTS:DataType="8">MaisSom</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -165,6 +212,7 @@
     <DTS:Executable
       DTS:refId="Package\Create Staging Area Database"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{BC8729AF-B250-4196-8038-839195E971E9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
@@ -227,6 +275,7 @@
     <DTS:Executable
       DTS:refId="Package\Foreach Staging Area  Script"
       DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:DelayValidation="True"
       DTS:Description="Foreach Loop Container"
       DTS:DTSID="{7E5ACE5F-BC2E-4C28-A686-CEB7DEDDCC5E}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
@@ -256,6 +305,7 @@
         <DTS:Executable
           DTS:refId="Package\Foreach Staging Area  Script\Execute Create Table Script"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:DelayValidation="True"
           DTS:Description="Execute SQL Task"
           DTS:DTSID="{21286F3A-EE91-4C9B-89D4-C62F8321152B}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
@@ -284,6 +334,7 @@
     <DTS:Executable
       DTS:refId="Package\Load Common Staging Tables"
       DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{B71D9297-A34E-4695-AE12-74C503BA3E2D}"
       DTS:ExecutableType="Microsoft.Pipeline"
@@ -1100,6 +1151,7 @@
     <DTS:Executable
       DTS:refId="Package\Load MaisRitmo Staging Tables"
       DTS:CreationName="STOCK:SEQUENCE"
+      DTS:DelayValidation="True"
       DTS:Description="Sequence Container"
       DTS:DTSID="{0f5d0df7-c214-4a69-8a6f-ec090c2277eb}"
       DTS:ExecutableType="STOCK:SEQUENCE"
@@ -1110,6 +1162,7 @@
         <DTS:Executable
           DTS:refId="Package\Load MaisRitmo Staging Tables\Load heavy Staging Tables"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{e47a26d2-7a6e-43c7-b5f2-107e0ac3f8fd}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -3503,6 +3556,7 @@
         <DTS:Executable
           DTS:refId="Package\Load MaisRitmo Staging Tables\Load soft Staging Tables"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{9cd43da6-a075-4aba-b2c1-453b1682e582}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -5467,6 +5521,7 @@
     <DTS:Executable
       DTS:refId="Package\Load MaisSom Staging Tables"
       DTS:CreationName="STOCK:SEQUENCE"
+      DTS:DelayValidation="True"
       DTS:Description="Sequence Container"
       DTS:DTSID="{7449211D-1FFE-4068-B1C6-9AE7C2463161}"
       DTS:ExecutableType="STOCK:SEQUENCE"
@@ -5477,6 +5532,7 @@
         <DTS:Executable
           DTS:refId="Package\Load MaisSom Staging Tables\Load heavy Staging Tables"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{071C1388-F42A-4779-B813-E38162AE130C}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -7790,6 +7846,7 @@
         <DTS:Executable
           DTS:refId="Package\Load MaisSom Staging Tables\Load soft Staging Tables"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{4E4CFD11-525B-4BD0-9D3C-67F576D7D443}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -11217,9 +11274,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-131.055555555556,35.9444444444445"
+              EndConnector="-131.055555555556,35.944444444444"
               Start="0,0"
-              End="-131.055555555556,28.4444444444445">
+              End="-131.055555555556,28.444444444444">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -11230,7 +11287,7 @@
                     Point2="-131.055555555556,0"
                     Point3="-131.055555555556,4" />
                   <mssgle:LineSegment
-                    End="-131.055555555556,28.4444444444445" />
+                    End="-131.055555555556,28.444444444444" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11245,26 +11302,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-208.388888888889,88.1111111111111"
+              EndConnector="-208.388888888889,88.111111111111"
               Start="0,0"
-              End="-208.388888888889,80.6111111111111">
+              End="-208.388888888889,80.611111111111">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.0555555555555" />
+                    End="0,40.0555555555555" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,60.0555555555555"
-                    Point2="0,64.0555555555555"
-                    Point3="-4,64.0555555555555" />
+                    Point1="0,40.0555555555555"
+                    Point2="0,44.0555555555555"
+                    Point3="-4,44.0555555555555" />
                   <mssgle:LineSegment
-                    End="-204.388888888889,64.0555555555555" />
+                    End="-204.388888888889,44.0555555555555" />
                   <mssgle:CubicBezierSegment
-                    Point1="-204.388888888889,64.0555555555555"
-                    Point2="-208.388888888889,64.0555555555555"
-                    Point3="-208.388888888889,68.0555555555555" />
+                    Point1="-204.388888888889,44.0555555555555"
+                    Point2="-208.388888888889,44.0555555555555"
+                    Point3="-208.388888888889,48.0555555555555" />
                   <mssgle:LineSegment
-                    End="-208.388888888889,80.6111111111111" />
+                    End="-208.388888888889,80.611111111111" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11324,7 +11381,7 @@
     design-time-name="Package\Load Common Staging Tables">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="196,42"
           Id="Package\Load Common Staging Tables\Insert into Categorias SA"
@@ -11368,7 +11425,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11390,7 +11449,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11412,7 +11473,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11500,7 +11563,7 @@
     design-time-name="Package\Load MaisRitmo Staging Tables\Load heavy Staging Tables">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="274,42"
           Id="Package\Load MaisRitmo Staging Tables\Load heavy Staging Tables\Insert into DocumentosComprasRitmo SA"
@@ -11556,7 +11619,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11578,7 +11643,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11600,7 +11667,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11688,7 +11757,7 @@
     design-time-name="Package\Load MaisRitmo Staging Tables\Load soft Staging Tables">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="138,42"
           Id="Package\Load MaisRitmo Staging Tables\Load soft Staging Tables\Funcionarios"
@@ -11732,7 +11801,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11754,7 +11825,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11776,7 +11849,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11864,7 +11939,7 @@
     design-time-name="Package\Load MaisSom Staging Tables\Load heavy Staging Tables">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="297,42"
           Id="Package\Load MaisSom Staging Tables\Load heavy Staging Tables\Insert into DocumentosComprasLinhasSom SA"
@@ -11908,7 +11983,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11930,7 +12007,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11952,7 +12031,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12040,7 +12121,7 @@
     design-time-name="Package\Load MaisSom Staging Tables\Load soft Staging Tables">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="231,42"
           Id="Package\Load MaisSom Staging Tables\Load soft Staging Tables\Insert into ClassificacoesSom SA"
@@ -12124,7 +12205,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12146,7 +12229,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12168,7 +12253,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12190,7 +12277,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12212,7 +12301,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12234,7 +12325,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12256,7 +12349,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12278,7 +12373,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
