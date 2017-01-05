@@ -15,4 +15,10 @@
 	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::StagingAreaDBName].Properties[Value]" ValueType="String">
 		<ConfiguredValue>SA_1130395_1160083</ConfiguredValue>
 	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::MaisRitmoDBName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>MaisRitmo</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::MaisSomDBName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>MaisSom</ConfiguredValue>
+	</Configuration>
 </DTSConfiguration>
