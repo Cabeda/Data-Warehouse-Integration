@@ -12,8 +12,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="113"
-  DTS:VersionGUID="{6FABC828-7A52-42B8-B645-6BEDD750A2D7}">
+  DTS:VersionBuild="114"
+  DTS:VersionGUID="{1A5E6C5D-1106-4700-BCA1-307418EEB251}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -44,6 +44,10 @@
       DTS:CreationName="OLEDB"
       DTS:DTSID="{2AD9F810-8EC7-4F12-A0DA-8FD11B933A9F}"
       DTS:ObjectName="Data Mart">
+      <DTS:PropertyExpression
+        DTS:Name="InitialCatalog">@[User::DataMartDBName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[User::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=WKSCARLOSRIBEI\CR_MSSQLSERVER;Initial Catalog=DM_1130395_1160083;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
@@ -54,6 +58,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{0C7F6004-812D-4FB6-BF3A-D44F4B94E723}"
       DTS:ObjectName="DimDate">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::PackagePath]+"\\Files\\DimDate.csv"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -749,6 +755,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{5E56CA99-8161-45AC-BA7D-2C0EB82E1462}"
       DTS:ObjectName="DimMoeda">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::PackagePath]+"\\Files\\ISO4217.csv"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -758,7 +766,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\ISEP\ARPAD\Trabalho prático\1130395_1160083\1130395_1160083\Files\ISO 4217 January 1, 2017.csv">
+          DTS:ConnectionString="D:\ISEP\ARPAD\Trabalho prático\1130395_1160083\1130395_1160083\Files\ISO4217.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -767,7 +775,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="pais"
-              DTS:DTSID="{2CEC656F-048B-4295-B9BA-A129EB439193}"
+              DTS:DTSID="{97984404-CF4B-434C-AB9A-30FCC69F4F30}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -776,7 +784,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="currency"
-              DTS:DTSID="{1D5CD39C-6217-4E20-A8D8-4263A7E48A16}"
+              DTS:DTSID="{F17D89C1-EA0A-4512-9951-439B6CA57B71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -785,7 +793,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="alphabetCode"
-              DTS:DTSID="{4C73FD1A-9AA7-4958-B3B4-AA443EEEDB0F}"
+              DTS:DTSID="{4977C76A-F408-4088-99F2-BCB9D02F6E97}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -794,7 +802,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="numericCode"
-              DTS:DTSID="{6F176063-5B85-43FF-A497-31BBBBDABA1D}"
+              DTS:DTSID="{57EDFB83-05CF-4E12-8E60-C5A3CA347CEB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -803,7 +811,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="minorUnit"
-              DTS:DTSID="{EB3E717F-0C50-41E0-BB97-75CC8980E465}"
+              DTS:DTSID="{2F614DD4-D515-479A-923A-A3DF19D90F3B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -2152,7 +2160,8 @@ select 'MaisRitmo' descricao</property>
                           name="empresaKey" />
                         <externalMetadataColumn
                           refId="Package\Load Business Dimensions\Load DimEmpresa\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[descricao]"
-                          dataType="wstr"
+                          codePage="1252"
+                          dataType="str"
                           length="50"
                           name="descricao" />
                       </externalMetadataColumns>
