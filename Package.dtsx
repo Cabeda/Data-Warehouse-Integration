@@ -12,8 +12,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="143"
-  DTS:VersionGUID="{52298434-DA2D-424C-9CA2-BCC6AED30F56}">
+  DTS:VersionBuild="144"
+  DTS:VersionGUID="{5665C9DD-065A-4B23-A938-DEBA2119FDF5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -11190,9 +11190,8 @@ where [refTable].[codigo] = ?</property>
                         </inputColumn>
                         <inputColumn
                           refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[nomeCompleto]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="wstr"
+                          cachedLength="40"
                           cachedName="nomeCompleto"
                           externalMetadataColumnId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[nomeCompleto]"
                           lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Concate Nomes.Outputs[Derived Column Output].Columns[nomeCompleto]">
@@ -11503,9 +11502,8 @@ where [refTable].[codigo] = ?</property>
                         </inputColumn>
                         <inputColumn
                           refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Union All.Inputs[Union All Input 1].Columns[nomeCompleto]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="wstr"
+                          cachedLength="40"
                           cachedName="nomeCompleto"
                           lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Concate Nomes.Outputs[Derived Column Output].Columns[nomeCompleto]">
                           <properties>
@@ -11750,9 +11748,8 @@ where [refTable].[codigo] = ?</property>
                         </inputColumn>
                         <inputColumn
                           refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Union All.Inputs[Union All Input 2].Columns[nomeCompleto]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="wstr"
+                          cachedLength="40"
                           cachedName="nomeCompleto"
                           lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Concate Nomes.Outputs[Derived Column Output].Columns[nomeCompleto]">
                           <properties>
@@ -12012,9 +12009,8 @@ where [refTable].[codigo] = ?</property>
                           lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\FuncionariosSom.Outputs[OLE DB Source Output].Columns[empresaKey]" />
                         <inputColumn
                           refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Update DimFuncionarios Som.Inputs[OLE DB Command Input].Columns[nomeCompleto]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="wstr"
+                          cachedLength="40"
                           cachedName="nomeCompleto"
                           externalMetadataColumnId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Update DimFuncionarios Som.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
                           lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Concate Nomes.Outputs[Derived Column Output].Columns[nomeCompleto]" />
