@@ -2,7 +2,7 @@ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimEmpresa')
 	CREATE TABLE [dbo].[DimEmpresa]
 	(
 		[empresaKey] [int] IDENTITY(1,1) NOT NULL,
-		[descricao] [nvarchar](50) NOT NULL
+		[descricao] [varchar](50) NOT NULL
 		CONSTRAINT [PK_DimEmpresa] PRIMARY KEY CLUSTERED
 	(
 		[empresaKey] ASC
