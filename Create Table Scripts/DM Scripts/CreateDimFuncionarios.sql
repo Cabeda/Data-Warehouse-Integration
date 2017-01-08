@@ -2,21 +2,21 @@ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimFuncionarios')
 	CREATE TABLE [dbo].[DimFuncionarios]
 	(
 		[funcionarioKey] [int] IDENTITY(1,1) NOT NULL,
-		[empresaKey] [int] NOT NULL,
-		[numero] [numeric](6, 0) NOT NULL,
-		[codigo] [nvarchar](20) NOT NULL,
-		[nome_completo] [nvarchar](50) NULL,
-		[grupo] [nvarchar](20) NOT NULL,
-		[departamentoDesc] [nvarchar](20) NOT NULL,
-		[email] [nvarchar](100) NOT NULL,
-		[chefeKey] [int] NOT NULL,
-		[data_criacao] [date] NOT NULL,
-		[data_ult_gravacao] [date] NOT NULL,
-		[dataCriacaoKey] [int] NOT NULL,
-		[dataUltGravacaoKey] [int] NOT NULL,
-		[effectiveDateKey] [int] NOT NULL,
-		[expiredDateKey] [int] NOT NULL,
-		[isCurrent] [int] NOT NULL
+		[empresaKey] [int] NULL,
+		[numero] [numeric](6, 0) NULL,
+		[codigo] [varchar](20) NULL,
+		[nome_completo] [varchar](50) NULL,
+		[grupo] [varchar](20) NULL,
+		[departamentoDesc] [varchar](20) NULL,
+		[email] [varchar](100) NULL,
+		[chefe] [varchar](20) NULL,
+		[data_criacao] [date] NULL,
+		[data_ult_gravacao] [date] NULL,
+		[dataCriacaoKey] [int] NULL,
+		[dataUltGravacaoKey] [int] NULL,
+		[effectiveDateKey] [int] NULL,
+		[expiredDateKey] [int] NULL,
+		[isCurrent] [int] NULL
 		CONSTRAINT [PK_DimFuncionarios] PRIMARY KEY CLUSTERED 
 	(
 		[funcionarioKey] ASC
