@@ -7,10 +7,13 @@
 		<ConfiguredValue>DM_1130395_1160083</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PackagePath].Properties[Value]" ValueType="String">
-		<ConfiguredValue>D:\ISEP\ARPAD\Trabalho prático\1130395_1160083\1130395_1160083</ConfiguredValue>
+		<ConfiguredValue>C:\Users\win\Desktop\trabalho-arpad</ConfiguredValue>
+	</Configuration>
+		<Configuration ConfiguredType="Property" Path="\Package.Variables[User::IntegrationUserName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>NT Service\MSSQL$SQLEXPRESS</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ServerName].Properties[Value]" ValueType="String">
-		<ConfiguredValue>WKSCARLOSRIBEI\CR_MSSQLSERVER</ConfiguredValue>
+		<ConfiguredValue>WINDOWS\SQLEXPRESS</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::StagingAreaDBName].Properties[Value]" ValueType="String">
 		<ConfiguredValue>SA_1130395_1160083</ConfiguredValue>

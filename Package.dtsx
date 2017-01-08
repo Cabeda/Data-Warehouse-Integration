@@ -8,12 +8,12 @@
   DTS:DTSID="{CAB6339B-EA84-4F12-96FB-3A9F6D79D8FC}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.2164.0"
+  DTS:LastModifiedProductVersion="13.0.2165.0"
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="144"
-  DTS:VersionGUID="{5665C9DD-065A-4B23-A938-DEBA2119FDF5}">
+  DTS:VersionBuild="157"
+  DTS:VersionGUID="{0629A075-0608-4C2D-BC82-2FDA3CD6C5BA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -50,7 +50,7 @@
         DTS:Name="ServerName">@[User::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=WKSCARLOSRIBEI\CR_MSSQLSERVER;Initial Catalog=DM_1130395_1160083;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=WINDOWS\SQLEXPRESS;Initial Catalog=DM_1130395_1160083;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -69,7 +69,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\ISEP\ARPAD\Trabalho prático\1130395_1160083\1130395_1160083\Files\DimDate.csv">
+          DTS:ConnectionString="C:\Users\win\Desktop\trabalho-arpad\Files\DimDate.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -766,7 +766,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\ISEP\ARPAD\Trabalho prático\1130395_1160083\1130395_1160083\Files\ISO4217.csv">
+          DTS:ConnectionString="C:\Users\win\Desktop\trabalho-arpad\Files\ISO4217.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -828,7 +828,7 @@
         DTS:Name="ServerName">@[User::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=WKSCARLOSRIBEI\CR_MSSQLSERVER;Initial Catalog=MaisRitmo;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=WINDOWS\SQLEXPRESS;Initial Catalog=MaisRitmo;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -842,7 +842,7 @@
         DTS:Name="ServerName">@[User::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=WKSCARLOSRIBEI\CR_MSSQLSERVER;Initial Catalog=MaisSom;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=WINDOWS\SQLEXPRESS;Initial Catalog=MaisSom;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -854,7 +854,7 @@
         DTS:Name="ServerName">@[User::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=WKSCARLOSRIBEI\CR_MSSQLSERVER;Initial Catalog=master;Integrated Security=True;Application Name=SSIS-Package-{1FC673A7-0EAA-4C8C-AC02-879495E05E4D}WKSCARLOSRIBEI\CR_MSSQLSERVER.master;" />
+          DTS:ConnectionString="Data Source=WINDOWS\SQLEXPRESS;Initial Catalog=master;Integrated Security=True;Application Name=SSIS-Package-{1FC673A7-0EAA-4C8C-AC02-879495E05E4D}WKSCARLOSRIBEI\CR_MSSQLSERVER.master;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -869,17 +869,17 @@
         DTS:Name="ServerName">@[User::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=WKSCARLOSRIBEI\CR_MSSQLSERVER;Initial Catalog=SA_1130395_1160083;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=WINDOWS\SQLEXPRESS;Initial Catalog=SA_1130395_1160083;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Configurations>
     <DTS:Configuration
-      DTS:ConfigurationString="D:\ISEP\ARPAD\Trabalho prático\1130395_1160083\1130395_1160083\Package Configurations.dtsConfig"
+      DTS:ConfigurationString="C:\Users\win\Desktop\trabalho-arpad\Package Configurations.dtsConfig"
       DTS:ConfigurationType="1"
       DTS:CreationName=""
-      DTS:DTSID="{0C54D972-9E01-42FF-BAA1-D4EA3704EB99}"
-      DTS:ObjectName="Package Configuration" />
+      DTS:DTSID="{CFEC7644-4401-419C-BBEA-400FF20BE922}"
+      DTS:ObjectName="Configuration 1" />
     <DTS:Configuration
       DTS:ConfigurationString="ARPAD_DataMart"
       DTS:ConfigurationType="5"
@@ -887,6 +887,53 @@
       DTS:DTSID="{2C30E3A5-9EC3-4B87-AF61-E9215937E88A}"
       DTS:ObjectName="Package Configuration EV" />
   </DTS:Configurations>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{8312EB6E-C549-4F13-94F2-1E9D8F7B6223}"
+      DTS:ObjectName="MaisRitmoDBName">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">MaisRitmo</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{98EF1FEA-3C43-4047-B4ED-C5E410677EC4}"
+      DTS:ObjectName="MaisSomDBName">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">MaisSom</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{6E305E06-57C4-40D4-9827-B691AD8CB6EC}"
+      DTS:ObjectName="PackagePath">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">C:\Users\win\Desktop\trabalho-arpad</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{3AAF532D-5FC6-463D-B2C5-E5EA95EA2018}"
+      DTS:ObjectName="ServerName">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">WINDOWS\SQLEXPRESS</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{E405D45E-3C3A-4B89-BB89-3A396920F20B}"
+      DTS:ObjectName="StagingAreaDBName">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">SA_1130395_1160083</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
@@ -937,6 +984,8 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{7732140E-323E-4E88-8E1B-412F42D9CAF4}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::MaisRitmoDBName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="MaisRitmoDBName">
@@ -946,6 +995,8 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{5BB0FF7F-1A10-42E9-BAB6-C47ECC59F1C3}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::MaisSomDBName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="MaisSomDBName">
@@ -955,11 +1006,13 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{42A1D9EE-0F45-48C0-9D8A-3A4CBC8D01DE}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::PackagePath]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="PackagePath">
       <DTS:VariableValue
-        DTS:DataType="8">D:\ISEP\ARPAD\Trabalho prático\1130395_1160083\1130395_1160083</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\win\Desktop\trabalho-arpad</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -974,15 +1027,19 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{C2B7B056-CF85-48D9-8444-63F7CC5EDAC5}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::ServerName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="ServerName">
       <DTS:VariableValue
-        DTS:DataType="8">WKSCARLOSRIBEI\CR_MSSQLSERVER</DTS:VariableValue>
+        DTS:DataType="8">WINDOWS\SQLEXPRESS</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{08895E16-3E91-42B3-8D8A-5EDE6EF5FDD5}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::StagingAreaDBName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="StagingAreaDBName">
@@ -1001,7 +1058,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create Data Mart Database"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1026,7 +1083,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create Staging Area Database"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1051,13 +1108,20 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create User for Analysis Services and Grant Permissions"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{2AD9F810-8EC7-4F12-A0DA-8FD11B933A9F}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="IF NOT EXISTS (SELECT name FROM sys.sysusers WHERE name = 'NT SERVICE\MSSQLServerOLAPService')&#xA; CREATE USER [NT SERVICE\MSSQLServerOLAPService] FOR LOGIN [NT SERVICE\MSSQLServerOLAPService]&#xA;ALTER ROLE [db_datareader] ADD MEMBER [NT SERVICE\MSSQLServerOLAPService]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="IF NOT EXISTS (SELECT        name&#xA;                                  FROM            sys.sysusers&#xA;                                  WHERE        name = '@User') CREATE USER [@User] FOR LOGIN[@User] ALTER ROLE [db_datareader] ADD MEMBER[@User]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@User"
+            SQLTask:DtsVariableName="User::IntegrationUserName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1078,7 +1142,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="D:\ISEP\ARPAD\Trabalho prático\1130395_1160083\1130395_1160083\Create Table Scripts\DM Scripts" />
+              Folder="C:\Users\win\Desktop\trabalho-arpad\Create Table Scripts\DM Scripts" />
             <FEFEProperty
               FileSpec="*.*" />
             <FEFEProperty
@@ -1100,7 +1164,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute Create Table Script"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1137,7 +1201,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="D:\ISEP\ARPAD\Trabalho prático\1130395_1160083\1130395_1160083\Create Table Scripts\SA Scripts" />
+              Folder="C:\Users\win\Desktop\trabalho-arpad\Create Table Scripts\SA Scripts" />
             <FEFEProperty
               FileSpec="*.sql" />
             <FEFEProperty
@@ -1159,7 +1223,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute Create Table Script"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1464,7 +1528,7 @@
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Output].ExternalColumns[pais]"
-                          length="100"
+                          length="30"
                           lineageId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Output].Columns[pais]"
                           name="pais"
                           truncationRowDisposition="FailComponent" />
@@ -1475,7 +1539,7 @@
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Output].ExternalColumns[currency]"
-                          length="100"
+                          length="30"
                           lineageId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Output].Columns[currency]"
                           name="currency"
                           truncationRowDisposition="FailComponent" />
@@ -1486,7 +1550,7 @@
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Output].ExternalColumns[alphabetCode]"
-                          length="50"
+                          length="10"
                           lineageId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Output].Columns[alphabetCode]"
                           name="alphabetCode"
                           truncationRowDisposition="FailComponent" />
@@ -1501,19 +1565,19 @@
                           refId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Output].ExternalColumns[pais]"
                           codePage="1252"
                           dataType="str"
-                          length="100"
+                          length="30"
                           name="pais" />
                         <externalMetadataColumn
                           refId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Output].ExternalColumns[currency]"
                           codePage="1252"
                           dataType="str"
-                          length="100"
+                          length="30"
                           name="currency" />
                         <externalMetadataColumn
                           refId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Output].ExternalColumns[alphabetCode]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="10"
                           name="alphabetCode" />
                       </externalMetadataColumns>
                     </output>
@@ -1531,21 +1595,21 @@
                           refId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Error Output].Columns[pais]"
                           codePage="1252"
                           dataType="str"
-                          length="100"
+                          length="30"
                           lineageId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Error Output].Columns[pais]"
                           name="pais" />
                         <outputColumn
                           refId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Error Output].Columns[currency]"
                           codePage="1252"
                           dataType="str"
-                          length="100"
+                          length="30"
                           lineageId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Error Output].Columns[currency]"
                           name="currency" />
                         <outputColumn
                           refId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Error Output].Columns[alphabetCode]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="10"
                           lineageId="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda.Outputs[OLE DB Source Error Output].Columns[alphabetCode]"
                           name="alphabetCode" />
                         <outputColumn
@@ -2485,19 +2549,19 @@ select 'MaisRitmo' descricao</property>
                           refId="Package\Load Business Dimensions\Load DimMoeda\Insert into DimMoeda.Inputs[OLE DB Destination Input].ExternalColumns[pais]"
                           codePage="1252"
                           dataType="str"
-                          length="100"
+                          length="30"
                           name="pais" />
                         <externalMetadataColumn
                           refId="Package\Load Business Dimensions\Load DimMoeda\Insert into DimMoeda.Inputs[OLE DB Destination Input].ExternalColumns[currency]"
                           codePage="1252"
                           dataType="str"
-                          length="100"
+                          length="30"
                           name="currency" />
                         <externalMetadataColumn
                           refId="Package\Load Business Dimensions\Load DimMoeda\Insert into DimMoeda.Inputs[OLE DB Destination Input].ExternalColumns[alphabetCode]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="10"
                           name="alphabetCode" />
                       </externalMetadataColumns>
                     </input>
@@ -4896,9 +4960,7 @@ left join DM_1130395_1160083.dbo.DimEmpresa de on de.descricao='MaisSom'</proper
                           name="email" />
                         <externalMetadataColumn
                           refId="Package\Load Business Dimensions with dependencies\DimFornecedor\Insert into DimFornecedores Som.Inputs[OLE DB Destination Input].ExternalColumns[nacionalidadeDesc]"
-                          codePage="1252"
-                          dataType="str"
-                          length="20"
+                          dataType="i4"
                           name="nacionalidadeDesc" />
                         <externalMetadataColumn
                           refId="Package\Load Business Dimensions with dependencies\DimFornecedor\Insert into DimFornecedores Som.Inputs[OLE DB Destination Input].ExternalColumns[telemovel]"
@@ -10366,24 +10428,6 @@ left join DM_1130395_1160083.dbo.DimEmpresa de on de.descricao='MaisSom'</proper
                           externalMetadataColumnId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[email]"
                           lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Union All.Outputs[Union All Output 1].Columns[email]" />
                         <inputColumn
-                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].Columns[data_criacao]"
-                          cachedDataType="dbDate"
-                          cachedName="data_criacao"
-                          externalMetadataColumnId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[dataCriacao]"
-                          lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Union All.Outputs[Union All Output 1].Columns[data_criacao]" />
-                        <inputColumn
-                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].Columns[data_ult_gravacao]"
-                          cachedDataType="dbDate"
-                          cachedName="data_ult_gravacao"
-                          externalMetadataColumnId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[dataUltGravacao]"
-                          lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Union All.Outputs[Union All Output 1].Columns[data_ult_gravacao]" />
-                        <inputColumn
-                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].Columns[effectiveDate]"
-                          cachedDataType="dbDate"
-                          cachedName="effectiveDate"
-                          externalMetadataColumnId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[effectiveDate]"
-                          lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Set new Record Effective Date Som.Outputs[Derived Column Output].Columns[effectiveDate]" />
-                        <inputColumn
                           refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].Columns[departamentoDescConv]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -10399,14 +10443,6 @@ left join DM_1130395_1160083.dbo.DimEmpresa de on de.descricao='MaisSom'</proper
                           cachedName="nomeChefeConv"
                           externalMetadataColumnId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[chefe]"
                           lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Data Conversion.Outputs[Data Conversion Output].Columns[nomeChefeConv]" />
-                        <inputColumn
-                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].Columns[nomeCompletoConv]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="40"
-                          cachedName="nomeCompletoConv"
-                          externalMetadataColumnId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[nomeCompleto]"
-                          lineageId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Data Conversion.Outputs[Data Conversion Output].Columns[nomeCompletoConv]" />
                         <inputColumn
                           refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].Columns[IsCurrent]"
                           cachedDataType="i4"
@@ -10436,12 +10472,6 @@ left join DM_1130395_1160083.dbo.DimEmpresa de on de.descricao='MaisSom'</proper
                           length="20"
                           name="codigo" />
                         <externalMetadataColumn
-                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[nomeCompleto]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="nomeCompleto" />
-                        <externalMetadataColumn
                           refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[grupo]"
                           codePage="1252"
                           dataType="str"
@@ -10466,25 +10496,39 @@ left join DM_1130395_1160083.dbo.DimEmpresa de on de.descricao='MaisSom'</proper
                           length="20"
                           name="chefe" />
                         <externalMetadataColumn
-                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[dataCriacao]"
-                          dataType="dbDate"
-                          name="dataCriacao" />
-                        <externalMetadataColumn
-                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[dataUltGravacao]"
-                          dataType="dbDate"
-                          name="dataUltGravacao" />
-                        <externalMetadataColumn
-                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[effectiveDate]"
-                          dataType="dbDate"
-                          name="effectiveDate" />
-                        <externalMetadataColumn
-                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[expiredDate]"
-                          dataType="dbDate"
-                          name="expiredDate" />
-                        <externalMetadataColumn
                           refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[isCurrent]"
                           dataType="i4"
                           name="isCurrent" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[nome_completo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="nome_completo" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[data_criacao]"
+                          dataType="dbDate"
+                          name="data_criacao" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[data_ult_gravacao]"
+                          dataType="dbDate"
+                          name="data_ult_gravacao" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[dataCriacaoKey]"
+                          dataType="i4"
+                          name="dataCriacaoKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[dataUltGravacaoKey]"
+                          dataType="i4"
+                          name="dataUltGravacaoKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[effectiveDateKey]"
+                          dataType="i4"
+                          name="effectiveDateKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som.Inputs[OLE DB Destination Input].ExternalColumns[expiredDateKey]"
+                          dataType="i4"
+                          name="expiredDateKey" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -24743,9 +24787,9 @@ where [refTable].[codigo] = ?</property>
           Id="Package\Create Staging Area Database"
           TopLeft="324,36" />
         <NodeLayout
-          Size="234,42"
+          Size="342,42"
           Id="Package\Create User for Analysis Services and Grant Permissions"
-          TopLeft="651,131" />
+          TopLeft="604,127" />
         <NodeLayout
           Size="209,42"
           Id="Package\Foreach Data Mart Script\Execute Create Table Script"
@@ -24892,7 +24936,7 @@ where [refTable].[codigo] = ?</property>
         <NodeLayout
           Size="150,42"
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor"
-          TopLeft="299.916666666667,17.166666666667" />
+          TopLeft="304.916666666667,26.166666666667" />
         <NodeLayout
           Size="157,42"
           Id="Package\Load Business Dimensions with dependencies\DimFuncionarios"
@@ -25085,18 +25129,18 @@ where [refTable].[codigo] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="768.75,75">
+          TopLeft="772.25,75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56"
+              EndConnector="0,52"
               Start="0,0"
-              End="0,48.5">
+              End="0,44.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.5" />
+                    End="0,44.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25107,30 +25151,18 @@ where [refTable].[codigo] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="768,173">
+          TopLeft="778.75,169">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="14.5,35"
+              EndConnector="0,39"
               Start="0,0"
-              End="14.5,27.5">
+              End="0,31.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.5"
-                    Point2="0,17.5"
-                    Point3="4,17.5" />
-                  <mssgle:LineSegment
-                    End="10.5,17.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="10.5,17.5"
-                    Point2="14.5,17.5"
-                    Point3="14.5,21.5" />
-                  <mssgle:LineSegment
-                    End="14.5,27.5" />
+                    End="0,31.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25323,7 +25355,7 @@ where [refTable].[codigo] = ?</property>
     design-time-name="Package\Load Business Dimensions\DimMoeda is empty?">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="129,42"
           Id="Package\Load Business Dimensions\DimMoeda is empty?\DimMoeda"
@@ -25351,9 +25383,7 @@ where [refTable].[codigo] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -25553,9 +25583,13 @@ where [refTable].[codigo] = ?</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="130,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Union All 1"
-          TopLeft="807.5,717.5" />
+          Size="209,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Slowly Changing Dimension"
+          TopLeft="237,413.5" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Expired Old Record Som"
+          TopLeft="114.5,617.5" />
         <NodeLayout
           Size="244,42"
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Insert into DimFornecedores Ritmo"
@@ -25565,6 +25599,14 @@ where [refTable].[codigo] = ?</property>
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Lookup Zona Ritmo"
           TopLeft="818.5,311.5" />
         <NodeLayout
+          Size="121,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Union All"
+          TopLeft="281,719.5" />
+        <NodeLayout
+          Size="218,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Slowly Changing Dimension 1"
+          TopLeft="794.5,413.5" />
+        <NodeLayout
           Size="152,42"
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor\FornedoresSom"
           TopLeft="265.5,5.5" />
@@ -25573,9 +25615,13 @@ where [refTable].[codigo] = ?</property>
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Insert into DimFornecedores Som"
           TopLeft="222,992.5" />
         <NodeLayout
-          Size="200,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Expired Old Record Ritmo"
-          TopLeft="964.5,617.5" />
+          Size="237,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Set Old Record Expired Date Som"
+          TopLeft="126.5,515.5" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Update DimFornecedores Ritmo"
+          TopLeft="1269.5,515.5" />
         <NodeLayout
           Size="164,42"
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Lookup Zona Som"
@@ -25589,17 +25635,21 @@ where [refTable].[codigo] = ?</property>
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor\FornedoresRitmo"
           TopLeft="824,209.5" />
         <NodeLayout
-          Size="218,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Slowly Changing Dimension 1"
-          TopLeft="794.5,413.5" />
+          Size="200,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Expired Old Record Ritmo"
+          TopLeft="964.5,617.5" />
         <NodeLayout
-          Size="228,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Update DimFornecedores Ritmo"
-          TopLeft="1269.5,515.5" />
+          Size="130,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Union All 1"
+          TopLeft="807.5,717.5" />
         <NodeLayout
           Size="244,42"
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Set Old Record Expired Date Ritmo"
           TopLeft="927.5,522.5" />
+        <NodeLayout
+          Size="222,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Update DimFornecedores Som"
+          TopLeft="403,515.5" />
         <NodeLayout
           Size="253,42"
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Set new Record Effective Date Ritmo"
@@ -25608,118 +25658,14 @@ where [refTable].[codigo] = ?</property>
           Size="186,42"
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Lookup Nacionalidades"
           TopLeft="248.5,209.5" />
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Union All Output 11]"
-          TopLeft="872.5,759.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="31.0000000000001,62"
-              Start="0,0"
-              End="31.0000000000001,54.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27"
-                    Point2="0,31"
-                    Point3="4,31" />
-                  <mssgle:LineSegment
-                    End="27.0000000000001,31" />
-                  <mssgle:CubicBezierSegment
-                    Point1="27.0000000000001,31"
-                    Point2="31.0000000000001,31"
-                    Point3="31.0000000000001,35" />
-                  <mssgle:LineSegment
-                    End="31.0000000000001,54.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[OLE DB Source Output]"
-          TopLeft="341.5,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[OLE DB Source Output1]"
-          TopLeft="903.5,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[OLE DB Command Output]"
-          TopLeft="1064.5,659.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-171.666666666667,58.0000000000001"
-              Start="0,0"
-              End="-171.666666666667,50.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.3768996960487" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.3768996960487"
-                    Point2="0,34.3768996960487"
-                    Point3="-4,34.3768996960487" />
-                  <mssgle:LineSegment
-                    End="-167.666666666667,34.3768996960487" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-167.666666666667,34.3768996960487"
-                    Point2="-171.666666666667,34.3768996960487"
-                    Point3="-171.666666666667,38.3768996960487" />
-                  <mssgle:LineSegment
-                    End="-171.666666666667,50.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Data Conversion"
+          TopLeft="262.5,902.5" />
+        <NodeLayout
+          Size="246,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Set new Record Effective Date Som"
+          TopLeft="218,818.5" />
         <EdgeLayout
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[New Output]"
           TopLeft="851.583333333333,455.5">
@@ -25745,8 +25691,8 @@ where [refTable].[codigo] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Lookup Match Output2]"
-          TopLeft="903.5,353.5">
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Lookup Match Output]"
+          TopLeft="341.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -25793,8 +25739,8 @@ where [refTable].[codigo] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Lookup Match Output]"
-          TopLeft="341.5,149.5">
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Lookup Match Output2]"
+          TopLeft="903.5,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -25813,6 +25759,66 @@ where [refTable].[codigo] = ?</property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Lookup Match Output3]"
+          TopLeft="341.5,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Historical Attribute Inserts Output1]"
+          TopLeft="291.25,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-46.25,59.9999999999999"
+              Start="0,0"
+              End="-46.25,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.503937007874" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.503937007874"
+                    Point2="0,20.503937007874"
+                    Point3="-4,20.503937007874" />
+                  <mssgle:LineSegment
+                    End="-42.25,20.503937007874" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-42.25,20.503937007874"
+                    Point2="-46.25,20.503937007874"
+                    Point3="-46.25,24.503937007874" />
+                  <mssgle:LineSegment
+                    End="-46.25,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-98.18138671875,25.503937007874,150.1127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -25853,6 +25859,40 @@ where [refTable].[codigo] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Derived Column Output3]"
+          TopLeft="245,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-33.9999999999998,60"
+              Start="0,0"
+              End="-33.9999999999998,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
+                  <mssgle:LineSegment
+                    End="-29.9999999999998,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-29.9999999999998,30"
+                    Point2="-33.9999999999998,30"
+                    Point3="-33.9999999999998,34" />
+                  <mssgle:LineSegment
+                    End="-33.9999999999998,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Derived Column Output2]"
           TopLeft="903.5,863.5">
           <EdgeLayout.Curve>
@@ -25866,6 +25906,28 @@ where [refTable].[codigo] = ?</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Derived Column Output1]"
+          TopLeft="340.75,860.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.9999999999999"
+              Start="0,0"
+              End="0,34.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.4999999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25909,143 +25971,19 @@ where [refTable].[codigo] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Changing Attribute Updates Output]"
-          TopLeft="956,455.5">
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Data Conversion Output]"
+          TopLeft="340.5,944.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="427.5,60"
+              EndConnector="0,48.0000000000001"
               Start="0,0"
-              End="427.5,52.5">
+              End="0,40.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.4833836858006" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4833836858006"
-                    Point2="0,20.4833836858006"
-                    Point3="4,20.4833836858006" />
-                  <mssgle:LineSegment
-                    End="423.5,20.4833836858006" />
-                  <mssgle:CubicBezierSegment
-                    Point1="423.5,20.4833836858006"
-                    Point2="427.5,20.4833836858006"
-                    Point3="427.5,24.4833836858006" />
-                  <mssgle:LineSegment
-                    End="427.5,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="135.21609375,25.4833836858006,157.0678125,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Data Conversion"
-          TopLeft="262.5,902.5" />
-        <NodeLayout
-          Size="209,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Slowly Changing Dimension"
-          TopLeft="237,413.5" />
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Lookup Match Output3]"
-          TopLeft="341.5,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="237,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Set Old Record Expired Date Som"
-          TopLeft="126.5,515.5" />
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Historical Attribute Inserts Output1]"
-          TopLeft="291.25,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-46.25,59.9999999999999"
-              Start="0,0"
-              End="-46.25,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.503937007874" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.503937007874"
-                    Point2="0,20.503937007874"
-                    Point3="-4,20.503937007874" />
-                  <mssgle:LineSegment
-                    End="-42.25,20.503937007874" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-42.25,20.503937007874"
-                    Point2="-46.25,20.503937007874"
-                    Point3="-46.25,24.503937007874" />
-                  <mssgle:LineSegment
-                    End="-46.25,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-98.18138671875,25.503937007874,150.1127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="193,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Expired Old Record Som"
-          TopLeft="114.5,617.5" />
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Derived Column Output3]"
-          TopLeft="245,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-33.9999999999998,60"
-              Start="0,0"
-              End="-33.9999999999998,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="-4,30" />
-                  <mssgle:LineSegment
-                    End="-29.9999999999998,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-29.9999999999998,30"
-                    Point2="-33.9999999999998,30"
-                    Point3="-33.9999999999998,34" />
-                  <mssgle:LineSegment
-                    End="-33.9999999999998,52.5" />
+                    End="0,40.5000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26054,110 +25992,6 @@ where [refTable].[codigo] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Union All"
-          TopLeft="281,719.5" />
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[New Output1]"
-          TopLeft="370.5,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-10.1666666666665,264"
-              Start="0,0"
-              End="-10.1666666666665,256.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,152.332789559543" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,152.332789559543"
-                    Point2="0,156.332789559543"
-                    Point3="-4,156.332789559543" />
-                  <mssgle:LineSegment
-                    End="-6.16666666666646,156.332789559543" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-6.16666666666646,156.332789559543"
-                    Point2="-10.1666666666665,156.332789559543"
-                    Point3="-10.1666666666665,160.332789559543" />
-                  <mssgle:LineSegment
-                    End="-10.1666666666665,256.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-32.1747200520832,161.332789559543,54.1827734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[OLE DB Command Output1]"
-          TopLeft="211,659.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="111.666666666667,60"
-              Start="0,0"
-              End="111.666666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5301794453507" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5301794453507"
-                    Point2="0,35.5301794453507"
-                    Point3="4,35.5301794453507" />
-                  <mssgle:LineSegment
-                    End="107.666666666667,35.5301794453507" />
-                  <mssgle:CubicBezierSegment
-                    Point1="107.666666666667,35.5301794453507"
-                    Point2="111.666666666667,35.5301794453507"
-                    Point3="111.666666666667,39.5301794453507" />
-                  <mssgle:LineSegment
-                    End="111.666666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="246,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Set new Record Effective Date Som"
-          TopLeft="218,818.5" />
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Union All Output 1]"
-          TopLeft="341.25,761.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,57"
-              Start="0,0"
-              End="0,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="222,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor\Update DimFornecedores Som"
-          TopLeft="403,515.5" />
         <EdgeLayout
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Changing Attribute Updates Output1]"
           TopLeft="391.75,455.5">
@@ -26195,19 +26029,67 @@ where [refTable].[codigo] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Derived Column Output1]"
-          TopLeft="340.75,860.5">
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Changing Attribute Updates Output]"
+          TopLeft="956,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41.9999999999999"
+              EndConnector="427.5,60"
               Start="0,0"
-              End="0,34.4999999999999">
+              End="427.5,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.4999999999999" />
+                    End="0,16.4833836858006" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4833836858006"
+                    Point2="0,20.4833836858006"
+                    Point3="4,20.4833836858006" />
+                  <mssgle:LineSegment
+                    End="423.5,20.4833836858006" />
+                  <mssgle:CubicBezierSegment
+                    Point1="423.5,20.4833836858006"
+                    Point2="427.5,20.4833836858006"
+                    Point3="427.5,24.4833836858006" />
+                  <mssgle:LineSegment
+                    End="427.5,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="135.21609375,25.4833836858006,157.0678125,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Union All Output 11]"
+          TopLeft="872.5,759.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="31.0000000000001,62"
+              Start="0,0"
+              End="31.0000000000001,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27"
+                    Point2="0,31"
+                    Point3="4,31" />
+                  <mssgle:LineSegment
+                    End="27.0000000000001,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27.0000000000001,31"
+                    Point2="31.0000000000001,31"
+                    Point3="31.0000000000001,35" />
+                  <mssgle:LineSegment
+                    End="31.0000000000001,54.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26217,25 +26099,173 @@ where [refTable].[codigo] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Data Conversion Output]"
-          TopLeft="340.5,944.5">
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Union All Output 1]"
+          TopLeft="341.25,761.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,48.0000000000001"
+              EndConnector="0,57"
               Start="0,0"
-              End="0,40.5000000000001">
+              End="0,49.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.5000000000001" />
+                    End="0,49.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[OLE DB Source Output1]"
+          TopLeft="903.5,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[OLE DB Source Output]"
+          TopLeft="341.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[OLE DB Command Output1]"
+          TopLeft="211,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="111.666666666667,60"
+              Start="0,0"
+              End="111.666666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5301794453507" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5301794453507"
+                    Point2="0,35.5301794453507"
+                    Point3="4,35.5301794453507" />
+                  <mssgle:LineSegment
+                    End="107.666666666667,35.5301794453507" />
+                  <mssgle:CubicBezierSegment
+                    Point1="107.666666666667,35.5301794453507"
+                    Point2="111.666666666667,35.5301794453507"
+                    Point3="111.666666666667,39.5301794453507" />
+                  <mssgle:LineSegment
+                    End="111.666666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[OLE DB Command Output]"
+          TopLeft="1064.5,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-171.666666666667,58.0000000000001"
+              Start="0,0"
+              End="-171.666666666667,50.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.3768996960487" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.3768996960487"
+                    Point2="0,34.3768996960487"
+                    Point3="-4,34.3768996960487" />
+                  <mssgle:LineSegment
+                    End="-167.666666666667,34.3768996960487" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-167.666666666667,34.3768996960487"
+                    Point2="-171.666666666667,34.3768996960487"
+                    Point3="-171.666666666667,38.3768996960487" />
+                  <mssgle:LineSegment
+                    End="-171.666666666667,50.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[New Output1]"
+          TopLeft="370.5,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10.1666666666665,264"
+              Start="0,0"
+              End="-10.1666666666665,256.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,152.332789559543" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,152.332789559543"
+                    Point2="0,156.332789559543"
+                    Point3="-4,156.332789559543" />
+                  <mssgle:LineSegment
+                    End="-6.16666666666646,156.332789559543" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6.16666666666646,156.332789559543"
+                    Point2="-10.1666666666665,156.332789559543"
+                    Point3="-10.1666666666665,160.332789559543" />
+                  <mssgle:LineSegment
+                    End="-10.1666666666665,256.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-32.1747200520832,161.332789559543,54.1827734375,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26681,49 +26711,53 @@ where [refTable].[codigo] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="218,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Update DimFuncionarios Som"
-          TopLeft="329,524.5" />
-        <NodeLayout
-          Size="237,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Set Old Record Expired Date Som"
-          TopLeft="17.5000000000001,515.5" />
-        <NodeLayout
-          Size="152,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Concate Nomes"
-          TopLeft="156.5,209.5" />
-        <NodeLayout
           Size="209,42"
           Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Slowly Changing Dimension"
           TopLeft="128,413.5" />
         <NodeLayout
-          Size="246,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Set new Record Effective Date Som"
-          TopLeft="151,821.5" />
-        <NodeLayout
-          Size="167,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Lookup Chefe Som"
-          TopLeft="149,107.5" />
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Union All"
-          TopLeft="213,716.5" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\FuncionariosSom"
-          TopLeft="152,5.5" />
-        <NodeLayout
-          Size="208,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Lookup Departamento Som"
-          TopLeft="128.5,311.5" />
+          Size="193,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Expired Old Record Som"
+          TopLeft="5.50000000000006,617.5" />
         <NodeLayout
           Size="233,42"
           Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Insert into DimFuncionarios Som"
           TopLeft="170,962.5" />
         <NodeLayout
-          Size="193,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Expired Old Record Som"
-          TopLeft="5.50000000000006,617.5" />
+          Size="218,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Update DimFuncionarios Som"
+          TopLeft="329,524.5" />
+        <NodeLayout
+          Size="208,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Lookup Departamento Som"
+          TopLeft="128.5,311.5" />
+        <NodeLayout
+          Size="237,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Set Old Record Expired Date Som"
+          TopLeft="17.5000000000001,515.5" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\FuncionariosSom"
+          TopLeft="152,5.5" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Data Conversion"
+          TopLeft="203,896" />
+        <NodeLayout
+          Size="246,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Set new Record Effective Date Som"
+          TopLeft="151,821.5" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Union All"
+          TopLeft="213,716.5" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Concate Nomes"
+          TopLeft="156.5,209.5" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Lookup Chefe Som"
+          TopLeft="149,107.5" />
         <EdgeLayout
           Id="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Union All Output 1]"
           TopLeft="273.75,758.5">
@@ -26923,6 +26957,28 @@ where [refTable].[codigo] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Derived Column Output2]"
+          TopLeft="277.5,863.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.5"
+              Start="0,0"
+              End="0,25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Derived Column Output1]"
           TopLeft="136,557.5">
           <EdgeLayout.Curve>
@@ -26979,6 +27035,28 @@ where [refTable].[codigo] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Data Conversion Output]"
+          TopLeft="283.75,938">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24.5"
+              Start="0,0"
+              End="0,17">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Changing Attribute Updates Output]"
           TopLeft="282.75,455.5">
           <EdgeLayout.Curve>
@@ -27014,57 +27092,17 @@ where [refTable].[codigo] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios\Data Conversion"
-          TopLeft="203,896" />
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Derived Column Output2]"
-          TopLeft="277.5,863.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,32.5"
-              Start="0,0"
-              End="0,25">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Data Conversion Output]"
-          TopLeft="283.75,938">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,24.5"
-              Start="0,0"
-              End="0,17">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Business Dimensions with dependencies\DimFuncionarios\FuncionariosSom">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load Business Dimensions with dependencies\DimFuncionarios\Slowly Changing Dimension">
     <Properties>
@@ -27178,14 +27216,6 @@ where [refTable].[codigo] = ?</property>
         <Value
           type="q4:string">0</Value>
       </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Business Dimensions with dependencies\DimFuncionarios\FuncionariosSom">
-    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
