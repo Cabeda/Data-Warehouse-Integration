@@ -11,7 +11,7 @@ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'FuncionariosSom')
 		[email] [varchar](100) NOT NULL,
 		[chefe] [numeric](6, 0) NULL,
 		[data_criacao] [date] NOT NULL,
-		[data_ult_gravacao] [date] NOT NULL,
+		[data_ult_gravacao] [date] NOT NULL
 	 ) 
  ELSE
 	TRUNCATE TABLE [dbo].[FuncionariosSom]

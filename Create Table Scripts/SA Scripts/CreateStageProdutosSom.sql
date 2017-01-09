@@ -16,7 +16,7 @@ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'ProdutosSom')
 		[quantidadecativa] [numeric](13, 3) NOT NULL,
 		[taxaiva] [numeric](2, 0) NOT NULL,
 		[data_criacao] [date] NOT NULL,
-		[data_ult_gravacao] [date] NOT NULL,
+		[data_ult_gravacao] [date] NOT NULL
 	) 
 ELSE
 	TRUNCATE TABLE [dbo].[ProdutosSom]

@@ -17,7 +17,7 @@ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DocumentosComprasSom')
 		[totaliva] [numeric](19, 6) NOT NULL,
 		[valortotal] [numeric](19, 6) NOT NULL,
 		[data_criacao] [date] NOT NULL,
-		[data_ult_gravacao] [date] NOT NULL,
+		[data_ult_gravacao] [date] NOT NULL
 	) 
 ELSE
 	TRUNCATE TABLE [dbo].[DocumentosComprasSom]

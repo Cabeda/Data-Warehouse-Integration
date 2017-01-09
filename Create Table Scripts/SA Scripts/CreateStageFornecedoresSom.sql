@@ -22,7 +22,7 @@ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'FornecedoresSom')
 		[plafond] [numeric](19, 6) NOT NULL,
 		[classe] [int] NOT NULL,
 		[data_criacao] [date] NOT NULL,
-		[data_ult_gravacao] [date] NOT NULL,
+		[data_ult_gravacao] [date] NOT NULL
 	 ) 
 ELSE
 	TRUNCATE TABLE [dbo].[FornecedoresSom]

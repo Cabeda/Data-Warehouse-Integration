@@ -7,7 +7,7 @@ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'FamiliasSom')
 		[taxaiva] [numeric](2, 0) NULL,
 		[classificacao] [varchar](20) NULL,
 		[data_criacao] [date] NOT NULL,
-		[data_ult_gravacao] [date] NOT NULL,
+		[data_ult_gravacao] [date] NOT NULL
 	)
 ELSE
 	TRUNCATE TABLE [dbo].[FamiliasSom]
