@@ -12,8 +12,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="230"
-  DTS:VersionGUID="{D2FC5156-5357-4B08-B7B2-91386F42029E}">
+  DTS:VersionBuild="234"
+  DTS:VersionGUID="{671451D7-0D53-4BFE-9FA9-974DFCFA6ACA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -9953,14 +9953,14 @@ where [refTable].[codigo] = ?</property>
                   startId="Package\Load Business Dimensions with dependencies\DimFornecedor\Cod Postal Ritmo.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Historical Attribute Inserts Output1]"
-                  endId="Package\Load Business Dimensions with dependencies\DimFornecedor\Set Old Record Expired Date Som.Inputs[Derived Column Input]"
-                  name="Historical Attribute Inserts Output"
-                  startId="Package\Load Business Dimensions with dependencies\DimFornecedor\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]" />
-                <path
-                  refId="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Historical Attribute Inserts Output]"
                   endId="Package\Load Business Dimensions with dependencies\DimFornecedor\Set Old Record Expired Date Ritmo.Inputs[Derived Column Input]"
                   name="Historical Attribute Inserts Output"
                   startId="Package\Load Business Dimensions with dependencies\DimFornecedor\Slowly Changing Dimension 2.Outputs[Historical Attribute Inserts Output]" />
+                <path
+                  refId="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Historical Attribute Inserts Output]"
+                  endId="Package\Load Business Dimensions with dependencies\DimFornecedor\Set Old Record Expired Date Som.Inputs[Derived Column Input]"
+                  name="Historical Attribute Inserts Output"
+                  startId="Package\Load Business Dimensions with dependencies\DimFornecedor\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]" />
                 <path
                   refId="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Lookup Match Output]"
                   endId="Package\Load Business Dimensions with dependencies\DimFornecedor\Lookup ClassesFornecedoresSom.Inputs[Lookup Input]"
@@ -14644,14 +14644,14 @@ where [refTable].[codigo] = ?</property>
                   startId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Set Old Record Expired Date Som.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Historical Attribute Inserts Output1]"
-                  endId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Set Old Record Expired Date Ritmo.Inputs[Derived Column Input]"
-                  name="Historical Attribute Inserts Output"
-                  startId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Slowly Changing Dimension Ritmo.Outputs[Historical Attribute Inserts Output]" />
-                <path
-                  refId="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Historical Attribute Inserts Output]"
                   endId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Set Old Record Expired Date Som.Inputs[Derived Column Input]"
                   name="Historical Attribute Inserts Output"
                   startId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Slowly Changing Dimension Som.Outputs[Historical Attribute Inserts Output]" />
+                <path
+                  refId="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Historical Attribute Inserts Output]"
+                  endId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Set Old Record Expired Date Ritmo.Inputs[Derived Column Input]"
+                  name="Historical Attribute Inserts Output"
+                  startId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Slowly Changing Dimension Ritmo.Outputs[Historical Attribute Inserts Output]" />
                 <path
                   refId="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Lookup Match Output]"
                   endId="Package\Load Business Dimensions with dependencies\DimFuncionarios\Data Conversion Ritmo.Inputs[Data Conversion Input]"
@@ -21084,39 +21084,39 @@ inner join DM_1130395_1160083.dbo.DimEmpresa de on de.descricao='MaisSom'</prope
                   startId="Package\Load Business Dimensions with dependencies\DimProdutos\Slowly Changing Dimension Som.Outputs[Historical Attribute Inserts Output]" />
                 <path
                   refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output6]"
-                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Familia Som.Inputs[Lookup Input]"
+                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Slowly Changing Dimension Ritmo.Inputs[Slowly Changing Dimension Input]"
                   name="Lookup Match Output"
-                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Fornecedor Som.Outputs[Lookup Match Output]" />
+                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Cartegoria Ritmo.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output5]"
-                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Classificacoes.Inputs[Lookup Input]"
-                  name="Lookup Match Output"
-                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Cartegoria.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output4]"
-                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Data Conversion.Inputs[Data Conversion Input]"
-                  name="Lookup Match Output"
-                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Classificacoes.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output2]"
-                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Familia Ritmo.Inputs[Lookup Input]"
-                  name="Lookup Match Output"
-                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Fornecedor Ritmo.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output1]"
-                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Cartegoria Ritmo.Inputs[Lookup Input]"
-                  name="Lookup Match Output"
-                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Familia Ritmo.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output]"
                   endId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Cartegoria.Inputs[Lookup Input]"
                   name="Lookup Match Output"
                   startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Familia Som.Outputs[Lookup Match Output]" />
                 <path
-                  refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output3]"
-                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Slowly Changing Dimension Ritmo.Inputs[Slowly Changing Dimension Input]"
+                  refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output4]"
+                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Cartegoria Ritmo.Inputs[Lookup Input]"
                   name="Lookup Match Output"
-                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Cartegoria Ritmo.Outputs[Lookup Match Output]" />
+                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Familia Ritmo.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output2]"
+                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Lookup Match Output"
+                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Classificacoes.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output1]"
+                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Classificacoes.Inputs[Lookup Input]"
+                  name="Lookup Match Output"
+                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Cartegoria.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output]"
+                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Familia Som.Inputs[Lookup Input]"
+                  name="Lookup Match Output"
+                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Fornecedor Som.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output3]"
+                  endId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Familia Ritmo.Inputs[Lookup Input]"
+                  name="Lookup Match Output"
+                  startId="Package\Load Business Dimensions with dependencies\DimProdutos\Lookup Fornecedor Ritmo.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[New Output]"
                   endId="Package\Load Business Dimensions with dependencies\DimProdutos\Union All.Inputs[Union All Input 1]"
@@ -21200,6 +21200,341 @@ inner join DM_1130395_1160083.dbo.DimEmpresa de on de.descricao='MaisSom'</prope
               version="1">
               <components>
                 <component
+                  refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Derived Column"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Inputs[Derived Column Input].Columns[precounitario]"
+                          cachedDataType="numeric"
+                          cachedName="precounitario"
+                          cachedPrecision="19"
+                          cachedScale="6"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[precounitario]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Inputs[Derived Column Input].Columns[valoriliquido]"
+                          cachedDataType="numeric"
+                          cachedName="valoriliquido"
+                          cachedPrecision="19"
+                          cachedScale="6"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valoriliquido]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Inputs[Derived Column Input].Columns[totaliliquidoprods]"
+                          cachedDataType="numeric"
+                          cachedName="totaliliquidoprods"
+                          cachedPrecision="30"
+                          cachedScale="17"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totaliliquidoprods]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Inputs[Derived Column Input].Columns[totalbaseincidenciaiva]"
+                          cachedDataType="numeric"
+                          cachedName="totalbaseincidenciaiva"
+                          cachedPrecision="30"
+                          cachedScale="17"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totalbaseincidenciaiva]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Inputs[Derived Column Input].Columns[valortotal]"
+                          cachedDataType="numeric"
+                          cachedName="valortotal"
+                          cachedPrecision="30"
+                          cachedScale="17"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valortotal]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Inputs[Derived Column Input].Columns[moedaConv]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="moedaConv"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda.Outputs[Derived Column Output].Columns[moedaConv]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[precoUnitarioSTD]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[precoUnitarioSTD]"
+                          name="precoUnitarioSTD"
+                          precision="29"
+                          scale="14"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda.Outputs[Derived Column Output].Columns[moedaConv]} == "EUR" ? #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[precounitario]} : #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[precounitario]} * 1.15071725</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">moedaConv == "EUR" ? precounitario : precounitario * 1.15071725</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[precoUnitarioLocal]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[precoUnitarioLocal]"
+                          name="precoUnitarioLocal"
+                          precision="19"
+                          scale="6"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[precounitario]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">precounitario</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valorIliquidoSTD]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valorIliquidoSTD]"
+                          name="valorIliquidoSTD"
+                          precision="29"
+                          scale="14"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda.Outputs[Derived Column Output].Columns[moedaConv]} == "EUR" ? #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valoriliquido]} : #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valoriliquido]} * 1.15071725</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">moedaConv == "EUR" ? valoriliquido : valoriliquido * 1.15071725</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valorIliquidoLocal]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valorIliquidoLocal]"
+                          name="valorIliquidoLocal"
+                          precision="19"
+                          scale="6"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valoriliquido]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">valoriliquido</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totalbaseincidenciaivaSTD]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totalbaseincidenciaivaSTD]"
+                          name="totalbaseincidenciaivaSTD"
+                          precision="38"
+                          scale="23"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda.Outputs[Derived Column Output].Columns[moedaConv]} == "EUR" ? #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totalbaseincidenciaiva]} : #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totalbaseincidenciaiva]} * 1.15071725</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">moedaConv == "EUR" ? totalbaseincidenciaiva : totalbaseincidenciaiva * 1.15071725</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totalbaseincidenciaivaLocal]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totalbaseincidenciaivaLocal]"
+                          name="totalbaseincidenciaivaLocal"
+                          precision="30"
+                          scale="17"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totalbaseincidenciaiva]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">totalbaseincidenciaiva</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totaliliquidoprodsSTD]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totaliliquidoprodsSTD]"
+                          name="totaliliquidoprodsSTD"
+                          precision="38"
+                          scale="23"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda.Outputs[Derived Column Output].Columns[moedaConv]} == "EUR" ? #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totaliliquidoprods]} : #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totaliliquidoprods]} * 1.15071725</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">moedaConv == "EUR" ? totaliliquidoprods : totaliliquidoprods * 1.15071725</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totaliliquidoprodsLocal]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totaliliquidoprodsLocal]"
+                          name="totaliliquidoprodsLocal"
+                          precision="30"
+                          scale="17"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totaliliquidoprods]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">totaliliquidoprods</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valortotalSTD]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valortotalSTD]"
+                          name="valortotalSTD"
+                          precision="38"
+                          scale="23"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda.Outputs[Derived Column Output].Columns[moedaConv]} == "EUR" ? #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valortotal]} : #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valortotal]} * 1.15071725</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">moedaConv == "EUR" ? valortotal : valortotal * 1.15071725</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valortotalLocal]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valortotalLocal]"
+                          name="valortotalLocal"
+                          precision="30"
+                          scale="17"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valortotal]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">valortotal</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
                   refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda"
                   componentClassID="Microsoft.DerivedColumn"
                   contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -21217,7 +21552,7 @@ inner join DM_1130395_1160083.dbo.DimEmpresa de on de.descricao='MaisSom'</prope
                           cachedDataType="wstr"
                           cachedLength="20"
                           cachedName="moeda"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[moeda]" />
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[moeda]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -21245,7 +21580,7 @@ inner join DM_1130395_1160083.dbo.DimEmpresa de on de.descricao='MaisSom'</prope
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">(DT_STR,50,1252)([TRIM]([TRIM](#{Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[moeda]}) == "EURO" ? "EUR" : #{Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[moeda]}))</property>
+                              name="Expression">(DT_STR,50,1252)([TRIM]([TRIM](#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[moeda]}) == "EURO" ? "EUR" : #{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[moeda]}))</property>
                             <property
                               containsID="true"
                               dataType="System.String"
@@ -21275,6 +21610,594 @@ inner join DM_1130395_1160083.dbo.DimEmpresa de on de.descricao='MaisSom'</prope
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                           dataType="i4"
                           lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="DocumentosCompras"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select costamp,numerodocumento, frete,totaliva, valordesconto, precounitario, valoriliquido, 
+moeda, quantidade, totaliliquidoprods/cont as totaliliquidoprods, 
+totalbaseincidenciaiva/cont as totalbaseincidenciaiva, valortotal/cont as valortotal,empresaKey,
+produto,datadocumento,funcionario,datapagamento,convert(varchar(50),centrocustoDesc) as centrocustoDesc,
+zonaDesc,armazemDesc,iva
+from
+(
+Select dcs.costamp,dcs.numerodocumento,frete,dcs.totaliva,valordesconto,
+precounitario,valoriliquido,totalbaseincidenciaiva,totaliliquidoprods,dcs.valortotal,
+ms.moeda, quantidade,empresaKey, count(*) over(partition by dcs.costamp order by dcs.costamp) cont,
+produto,dcs.datadocumento,dcs.funcionario,datapagamento,ccs.centrocusto as centrocustoDesc,zo.zona as zonaDesc,
+arm.armazem as armazemDesc,iva
+from DocumentosComprasSom dcs
+inner join DocumentosComprasLinhasSom dcls on dcls.costamp=dcs.costamp
+inner join DM_1130395_1160083.dbo.DimEmpresa on descricao='MaisSom'
+inner join MoedasSom ms on ms.codigo=dcs.moeda
+inner join Zonas zo on zo.codigo=dcs.zona
+inner join Armazens arm on arm.codigo=dcls.armazem
+inner join CentrosCustoSom ccs on ccs.codigo=dcls.centrocusto
+) asd
+WHERE produto is not null</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Staging Area]"
+                      connectionManagerRefId="Package.ConnectionManagers[Staging Area]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[costamp]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[costamp]"
+                          length="25"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[costamp]"
+                          name="costamp"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[numerodocumento]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[numerodocumento]"
+                          length="20"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[numerodocumento]"
+                          name="numerodocumento"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[frete]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[frete]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[frete]"
+                          name="frete"
+                          precision="19"
+                          scale="6"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totaliva]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[totaliva]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totaliva]"
+                          name="totaliva"
+                          precision="19"
+                          scale="6"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valordesconto]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[valordesconto]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valordesconto]"
+                          name="valordesconto"
+                          precision="19"
+                          scale="6"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[precounitario]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[precounitario]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[precounitario]"
+                          name="precounitario"
+                          precision="19"
+                          scale="6"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valoriliquido]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[valoriliquido]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valoriliquido]"
+                          name="valoriliquido"
+                          precision="19"
+                          scale="6"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[moeda]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[moeda]"
+                          length="20"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[moeda]"
+                          name="moeda"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[quantidade]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[quantidade]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[quantidade]"
+                          name="quantidade"
+                          precision="14"
+                          scale="4"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totaliliquidoprods]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[totaliliquidoprods]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totaliliquidoprods]"
+                          name="totaliliquidoprods"
+                          precision="30"
+                          scale="17"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totalbaseincidenciaiva]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[totalbaseincidenciaiva]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[totalbaseincidenciaiva]"
+                          name="totalbaseincidenciaiva"
+                          precision="30"
+                          scale="17"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valortotal]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[valortotal]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valortotal]"
+                          name="valortotal"
+                          precision="30"
+                          scale="17"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[empresaKey]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[empresaKey]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[empresaKey]"
+                          name="empresaKey"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[produto]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[produto]"
+                          length="18"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[produto]"
+                          name="produto"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[datadocumento]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[datadocumento]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[datadocumento]"
+                          name="datadocumento"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[funcionario]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[funcionario]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[funcionario]"
+                          name="funcionario"
+                          precision="6"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[datapagamento]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[datapagamento]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[datapagamento]"
+                          name="datapagamento"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[centrocustoDesc]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[centrocustoDesc]"
+                          length="50"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[centrocustoDesc]"
+                          name="centrocustoDesc"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[zonaDesc]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[zonaDesc]"
+                          length="50"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[zonaDesc]"
+                          name="zonaDesc"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[armazemDesc]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[armazemDesc]"
+                          length="50"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[armazemDesc]"
+                          name="armazemDesc"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[iva]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[iva]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[iva]"
+                          name="iva"
+                          precision="19"
+                          scale="2"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[costamp]"
+                          codePage="1252"
+                          dataType="str"
+                          length="25"
+                          name="costamp" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[numerodocumento]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          name="numerodocumento" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[frete]"
+                          dataType="numeric"
+                          name="frete"
+                          precision="19"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[totaliva]"
+                          dataType="numeric"
+                          name="totaliva"
+                          precision="19"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[valordesconto]"
+                          dataType="numeric"
+                          name="valordesconto"
+                          precision="19"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[precounitario]"
+                          dataType="numeric"
+                          name="precounitario"
+                          precision="19"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[valoriliquido]"
+                          dataType="numeric"
+                          name="valoriliquido"
+                          precision="19"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[moeda]"
+                          dataType="wstr"
+                          length="20"
+                          name="moeda" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[quantidade]"
+                          dataType="numeric"
+                          name="quantidade"
+                          precision="14"
+                          scale="4" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[totaliliquidoprods]"
+                          dataType="numeric"
+                          name="totaliliquidoprods"
+                          precision="30"
+                          scale="17" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[totalbaseincidenciaiva]"
+                          dataType="numeric"
+                          name="totalbaseincidenciaiva"
+                          precision="30"
+                          scale="17" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[valortotal]"
+                          dataType="numeric"
+                          name="valortotal"
+                          precision="30"
+                          scale="17" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[empresaKey]"
+                          dataType="i4"
+                          name="empresaKey" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[produto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="18"
+                          name="produto" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[datadocumento]"
+                          dataType="dbDate"
+                          name="datadocumento" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[funcionario]"
+                          dataType="numeric"
+                          name="funcionario"
+                          precision="6" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[datapagamento]"
+                          dataType="dbDate"
+                          name="datapagamento" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[centrocustoDesc]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="centrocustoDesc" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[zonaDesc]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="zonaDesc" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[armazemDesc]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="armazemDesc" />
+                        <externalMetadataColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].ExternalColumns[iva]"
+                          dataType="numeric"
+                          name="iva"
+                          precision="19"
+                          scale="2" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[costamp]"
+                          codePage="1252"
+                          dataType="str"
+                          length="25"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[costamp]"
+                          name="costamp" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[numerodocumento]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[numerodocumento]"
+                          name="numerodocumento" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[frete]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[frete]"
+                          name="frete"
+                          precision="19"
+                          scale="6" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[totaliva]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[totaliva]"
+                          name="totaliva"
+                          precision="19"
+                          scale="6" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[valordesconto]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[valordesconto]"
+                          name="valordesconto"
+                          precision="19"
+                          scale="6" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[precounitario]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[precounitario]"
+                          name="precounitario"
+                          precision="19"
+                          scale="6" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[valoriliquido]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[valoriliquido]"
+                          name="valoriliquido"
+                          precision="19"
+                          scale="6" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[moeda]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[moeda]"
+                          name="moeda" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[quantidade]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[quantidade]"
+                          name="quantidade"
+                          precision="14"
+                          scale="4" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[totaliliquidoprods]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[totaliliquidoprods]"
+                          name="totaliliquidoprods"
+                          precision="30"
+                          scale="17" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[totalbaseincidenciaiva]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[totalbaseincidenciaiva]"
+                          name="totalbaseincidenciaiva"
+                          precision="30"
+                          scale="17" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[valortotal]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[valortotal]"
+                          name="valortotal"
+                          precision="30"
+                          scale="17" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[empresaKey]"
+                          dataType="i4"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[empresaKey]"
+                          name="empresaKey" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[produto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="18"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[produto]"
+                          name="produto" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[datadocumento]"
+                          dataType="dbDate"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[datadocumento]"
+                          name="datadocumento" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[funcionario]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[funcionario]"
+                          name="funcionario"
+                          precision="6" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[datapagamento]"
+                          dataType="dbDate"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[datapagamento]"
+                          name="datapagamento" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[centrocustoDesc]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[centrocustoDesc]"
+                          name="centrocustoDesc" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[zonaDesc]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[zonaDesc]"
+                          name="zonaDesc" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[armazemDesc]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[armazemDesc]"
+                          name="armazemDesc" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[iva]"
+                          dataType="numeric"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[iva]"
+                          name="iva"
+                          precision="19"
+                          scale="2" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -21339,7 +22262,7 @@ where [refTable].[empresaKey] = ? and [refTable].[produtoKey] = ? and [refTable]
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[empresaKey]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup productKey.Outputs[Lookup Match Output].Columns[productKey]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup productKey.Outputs[Lookup Match Output].Columns[fornecedorKey]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dateKey.Outputs[Lookup Match Output].Columns[dataDocumentoKey]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup funcionarioKey.Outputs[Lookup Match Output].Columns[funcionarioKey]};</property>
+                      name="ParameterMap">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[empresaKey]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup productKey.Outputs[Lookup Match Output].Columns[productKey]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup productKey.Outputs[Lookup Match Output].Columns[fornecedorKey]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dateKey.Outputs[Lookup Match Output].Columns[dataDocumentoKey]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup funcionarioKey.Outputs[Lookup Match Output].Columns[funcionarioKey]};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -21398,7 +22321,7 @@ where [refTable].[empresaKey] = ? and [refTable].[produtoKey] = ? and [refTable]
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Fact exists?.Inputs[Lookup Input].Columns[empresaKey]"
                           cachedDataType="i4"
                           cachedName="empresaKey"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[empresaKey]">
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[empresaKey]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -21566,7 +22489,7 @@ where [refTable].[empresaKey] = ? and [refTable].[produtoKey] = ? and [refTable]
                           cachedLength="25"
                           cachedName="costamp"
                           externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[costamp]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[costamp]" />
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[costamp]" />
                         <inputColumn
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[numerodocumento]"
                           cachedCodepage="1252"
@@ -21574,7 +22497,7 @@ where [refTable].[empresaKey] = ? and [refTable].[produtoKey] = ? and [refTable]
                           cachedLength="20"
                           cachedName="numerodocumento"
                           externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[numerodocumento]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[numerodocumento]" />
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[numerodocumento]" />
                         <inputColumn
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[frete]"
                           cachedDataType="numeric"
@@ -21582,7 +22505,7 @@ where [refTable].[empresaKey] = ? and [refTable].[produtoKey] = ? and [refTable]
                           cachedPrecision="19"
                           cachedScale="6"
                           externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[frete]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[frete]" />
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[frete]" />
                         <inputColumn
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[valordesconto]"
                           cachedDataType="numeric"
@@ -21590,7 +22513,7 @@ where [refTable].[empresaKey] = ? and [refTable].[produtoKey] = ? and [refTable]
                           cachedPrecision="19"
                           cachedScale="6"
                           externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[valorDesconto]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[valordesconto]" />
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[valordesconto]" />
                         <inputColumn
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[quantidade]"
                           cachedDataType="numeric"
@@ -21598,13 +22521,13 @@ where [refTable].[empresaKey] = ? and [refTable].[produtoKey] = ? and [refTable]
                           cachedPrecision="14"
                           cachedScale="4"
                           externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[quantidade]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[quantidade]" />
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[quantidade]" />
                         <inputColumn
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[empresaKey]"
                           cachedDataType="i4"
                           cachedName="empresaKey"
                           externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[empresaKey]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[empresaKey]" />
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[empresaKey]" />
                         <inputColumn
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[iva]"
                           cachedDataType="numeric"
@@ -21612,7 +22535,7 @@ where [refTable].[empresaKey] = ? and [refTable].[produtoKey] = ? and [refTable]
                           cachedPrecision="19"
                           cachedScale="2"
                           externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[iva]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[iva]" />
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[iva]" />
                         <inputColumn
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[fornecedorKey]"
                           cachedDataType="i4"
@@ -21655,6 +22578,86 @@ where [refTable].[empresaKey] = ? and [refTable].[produtoKey] = ? and [refTable]
                           cachedName="productKey"
                           externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[produtoKey]"
                           lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup productKey.Outputs[Lookup Match Output].Columns[productKey]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[precoUnitarioSTD]"
+                          cachedDataType="numeric"
+                          cachedName="precoUnitarioSTD"
+                          cachedPrecision="29"
+                          cachedScale="14"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[precoUnitarioSTD]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[precoUnitarioSTD]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[precoUnitarioLocal]"
+                          cachedDataType="numeric"
+                          cachedName="precoUnitarioLocal"
+                          cachedPrecision="19"
+                          cachedScale="6"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[precoUnitarioLocal]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[precoUnitarioLocal]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[valorIliquidoSTD]"
+                          cachedDataType="numeric"
+                          cachedName="valorIliquidoSTD"
+                          cachedPrecision="29"
+                          cachedScale="14"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[valorIliquidoSTD]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valorIliquidoSTD]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[valorIliquidoLocal]"
+                          cachedDataType="numeric"
+                          cachedName="valorIliquidoLocal"
+                          cachedPrecision="19"
+                          cachedScale="6"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[valorIliquidoLocal]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valorIliquidoLocal]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[totalbaseincidenciaivaSTD]"
+                          cachedDataType="numeric"
+                          cachedName="totalbaseincidenciaivaSTD"
+                          cachedPrecision="38"
+                          cachedScale="23"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[totalbaseincidenciaivaSTD]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totalbaseincidenciaivaSTD]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[totalbaseincidenciaivaLocal]"
+                          cachedDataType="numeric"
+                          cachedName="totalbaseincidenciaivaLocal"
+                          cachedPrecision="30"
+                          cachedScale="17"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[totalbaseincidenciaivaLocal]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totalbaseincidenciaivaLocal]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[totaliliquidoprodsSTD]"
+                          cachedDataType="numeric"
+                          cachedName="totaliliquidoprodsSTD"
+                          cachedPrecision="38"
+                          cachedScale="23"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[totaliliquidoprodsSTD]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totaliliquidoprodsSTD]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[totaliliquidoprodsLocal]"
+                          cachedDataType="numeric"
+                          cachedName="totaliliquidoprodsLocal"
+                          cachedPrecision="30"
+                          cachedScale="17"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[totaliliquidoprodsLocal]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[totaliliquidoprodsLocal]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[valortotalSTD]"
+                          cachedDataType="numeric"
+                          cachedName="valortotalSTD"
+                          cachedPrecision="38"
+                          cachedScale="23"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[valortotalSTD]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valortotalSTD]" />
+                        <inputColumn
+                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].Columns[valortotalLocal]"
+                          cachedDataType="numeric"
+                          cachedName="valortotalLocal"
+                          cachedPrecision="30"
+                          cachedScale="17"
+                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input].ExternalColumns[valortotalLocal]"
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output].Columns[valortotalLocal]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -21871,7 +22874,7 @@ where [refTable].[fullDate] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[datadocumento]};</property>
+                      name="ParameterMap">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[datadocumento]};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -21898,7 +22901,7 @@ where [refTable].[fullDate] = ?</property>
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dataPagamentoKey.Inputs[Lookup Input].Columns[datadocumento]"
                           cachedDataType="dbDate"
                           cachedName="datadocumento"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[datadocumento]">
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[datadocumento]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -22029,7 +23032,7 @@ where [refTable].[fullDate] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[datadocumento]};</property>
+                      name="ParameterMap">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[datadocumento]};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -22056,7 +23059,7 @@ where [refTable].[fullDate] = ?</property>
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dateKey.Inputs[Lookup Input].Columns[datadocumento]"
                           cachedDataType="dbDate"
                           cachedName="datadocumento"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[datadocumento]">
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[datadocumento]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -22187,7 +23190,7 @@ where [refTable].[centrocusto] = ? and [refTable].[zonaDesc] = ? and [refTable].
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[centrocustoDesc]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[zonaDesc]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[armazemDesc]};</property>
+                      name="ParameterMap">#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[centrocustoDesc]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[zonaDesc]};#{Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[armazemDesc]};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -22216,7 +23219,7 @@ where [refTable].[centrocusto] = ? and [refTable].[zonaDesc] = ? and [refTable].
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="centrocustoDesc"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[centrocustoDesc]">
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[centrocustoDesc]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -22234,7 +23237,7 @@ where [refTable].[centrocusto] = ? and [refTable].[zonaDesc] = ? and [refTable].
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="zonaDesc"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[zonaDesc]">
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[zonaDesc]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -22252,7 +23255,7 @@ where [refTable].[centrocusto] = ? and [refTable].[zonaDesc] = ? and [refTable].
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="armazemDesc"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[armazemDesc]">
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[armazemDesc]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -22411,7 +23414,7 @@ where [refTable].[empresaKey] = ? and [refTable].[numero] = ?</property>
                           cachedDataType="numeric"
                           cachedName="funcionario"
                           cachedPrecision="6"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[funcionario]">
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[funcionario]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -22427,7 +23430,7 @@ where [refTable].[empresaKey] = ? and [refTable].[numero] = ?</property>
                           refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup funcionarioKey.Inputs[Lookup Input].Columns[empresaKey]"
                           cachedDataType="i4"
                           cachedName="empresaKey"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[empresaKey]">
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[empresaKey]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -22747,7 +23750,7 @@ where [refTable].[referencia] = ?</property>
                           cachedDataType="str"
                           cachedLength="18"
                           cachedName="produto"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[produto]">
+                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output].Columns[produto]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -22835,594 +23838,6 @@ where [refTable].[referencia] = ?</property>
                     </output>
                   </outputs>
                 </component>
-                <component
-                  refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source"
-                  componentClassID="Microsoft.OLEDBSource"
-                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-                  description="OLE DB Source"
-                  name="OLE DB Source"
-                  usesDispositions="true"
-                  version="7">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset"></property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select costamp,numerodocumento, frete,totaliva, valordesconto, precounitario, valoriliquido, 
-moeda, quantidade, totaliliquidoprods/cont as totaliliquidoprods, 
-totalbaseincidenciaiva/cont as totalbaseincidenciaiva, valortotal/cont as valortotal,empresaKey,
-produto,datadocumento,funcionario,datapagamento,convert(varchar(50),centrocustoDesc) as centrocustoDesc,
-zonaDesc,armazemDesc,iva
-from
-(
-Select dcs.costamp,dcs.numerodocumento,frete,dcs.totaliva,valordesconto,
-precounitario,valoriliquido,totalbaseincidenciaiva,totaliliquidoprods,dcs.valortotal,
-ms.moeda, quantidade,empresaKey, count(*) over(partition by dcs.costamp order by dcs.costamp) cont,
-produto,dcs.datadocumento,dcs.funcionario,datapagamento,ccs.centrocusto as centrocustoDesc,zo.zona as zonaDesc,
-arm.armazem as armazemDesc,iva
-from DocumentosComprasSom dcs
-inner join DocumentosComprasLinhasSom dcls on dcls.costamp=dcs.costamp
-inner join DM_1130395_1160083.dbo.DimEmpresa on descricao='MaisSom'
-inner join MoedasSom ms on ms.codigo=dcs.moeda
-inner join Zonas zo on zo.codigo=dcs.zona
-inner join Armazens arm on arm.codigo=dcls.armazem
-inner join CentrosCustoSom ccs on ccs.codigo=dcls.centrocusto
-) asd
-WHERE produto is not null</property>
-                    <property
-                      dataType="System.String"
-                      description="The variable that contains the SQL command to be executed."
-                      name="SqlCommandVariable"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">2</property>
-                    <property
-                      dataType="System.String"
-                      description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping"></property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Staging Area]"
-                      connectionManagerRefId="Package.ConnectionManagers[Staging Area]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
-                  <outputs>
-                    <output
-                      refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output]"
-                      name="OLE DB Source Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[costamp]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[costamp]"
-                          length="25"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[costamp]"
-                          name="costamp"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[numerodocumento]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[numerodocumento]"
-                          length="20"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[numerodocumento]"
-                          name="numerodocumento"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[frete]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[frete]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[frete]"
-                          name="frete"
-                          precision="19"
-                          scale="6"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[totaliva]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[totaliva]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[totaliva]"
-                          name="totaliva"
-                          precision="19"
-                          scale="6"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[valordesconto]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[valordesconto]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[valordesconto]"
-                          name="valordesconto"
-                          precision="19"
-                          scale="6"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[precounitario]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[precounitario]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[precounitario]"
-                          name="precounitario"
-                          precision="19"
-                          scale="6"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[valoriliquido]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[valoriliquido]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[valoriliquido]"
-                          name="valoriliquido"
-                          precision="19"
-                          scale="6"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[moeda]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[moeda]"
-                          length="20"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[moeda]"
-                          name="moeda"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[quantidade]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[quantidade]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[quantidade]"
-                          name="quantidade"
-                          precision="14"
-                          scale="4"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[totaliliquidoprods]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[totaliliquidoprods]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[totaliliquidoprods]"
-                          name="totaliliquidoprods"
-                          precision="30"
-                          scale="17"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[totalbaseincidenciaiva]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[totalbaseincidenciaiva]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[totalbaseincidenciaiva]"
-                          name="totalbaseincidenciaiva"
-                          precision="30"
-                          scale="17"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[valortotal]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[valortotal]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[valortotal]"
-                          name="valortotal"
-                          precision="30"
-                          scale="17"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[empresaKey]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[empresaKey]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[empresaKey]"
-                          name="empresaKey"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[produto]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[produto]"
-                          length="18"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[produto]"
-                          name="produto"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[datadocumento]"
-                          dataType="dbDate"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[datadocumento]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[datadocumento]"
-                          name="datadocumento"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[funcionario]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[funcionario]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[funcionario]"
-                          name="funcionario"
-                          precision="6"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[datapagamento]"
-                          dataType="dbDate"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[datapagamento]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[datapagamento]"
-                          name="datapagamento"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[centrocustoDesc]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[centrocustoDesc]"
-                          length="50"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[centrocustoDesc]"
-                          name="centrocustoDesc"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[zonaDesc]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[zonaDesc]"
-                          length="50"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[zonaDesc]"
-                          name="zonaDesc"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[armazemDesc]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[armazemDesc]"
-                          length="50"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[armazemDesc]"
-                          name="armazemDesc"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[iva]"
-                          dataType="numeric"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[iva]"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].Columns[iva]"
-                          name="iva"
-                          precision="19"
-                          scale="2"
-                          truncationRowDisposition="FailComponent" />
-                      </outputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[costamp]"
-                          codePage="1252"
-                          dataType="str"
-                          length="25"
-                          name="costamp" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[numerodocumento]"
-                          codePage="1252"
-                          dataType="str"
-                          length="20"
-                          name="numerodocumento" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[frete]"
-                          dataType="numeric"
-                          name="frete"
-                          precision="19"
-                          scale="6" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[totaliva]"
-                          dataType="numeric"
-                          name="totaliva"
-                          precision="19"
-                          scale="6" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[valordesconto]"
-                          dataType="numeric"
-                          name="valordesconto"
-                          precision="19"
-                          scale="6" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[precounitario]"
-                          dataType="numeric"
-                          name="precounitario"
-                          precision="19"
-                          scale="6" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[valoriliquido]"
-                          dataType="numeric"
-                          name="valoriliquido"
-                          precision="19"
-                          scale="6" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[moeda]"
-                          dataType="wstr"
-                          length="20"
-                          name="moeda" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[quantidade]"
-                          dataType="numeric"
-                          name="quantidade"
-                          precision="14"
-                          scale="4" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[totaliliquidoprods]"
-                          dataType="numeric"
-                          name="totaliliquidoprods"
-                          precision="30"
-                          scale="17" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[totalbaseincidenciaiva]"
-                          dataType="numeric"
-                          name="totalbaseincidenciaiva"
-                          precision="30"
-                          scale="17" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[valortotal]"
-                          dataType="numeric"
-                          name="valortotal"
-                          precision="30"
-                          scale="17" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[empresaKey]"
-                          dataType="i4"
-                          name="empresaKey" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[produto]"
-                          codePage="1252"
-                          dataType="str"
-                          length="18"
-                          name="produto" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[datadocumento]"
-                          dataType="dbDate"
-                          name="datadocumento" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[funcionario]"
-                          dataType="numeric"
-                          name="funcionario"
-                          precision="6" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[datapagamento]"
-                          dataType="dbDate"
-                          name="datapagamento" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[centrocustoDesc]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="centrocustoDesc" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[zonaDesc]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="zonaDesc" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[armazemDesc]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="armazemDesc" />
-                        <externalMetadataColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[iva]"
-                          dataType="numeric"
-                          name="iva"
-                          precision="19"
-                          scale="2" />
-                      </externalMetadataColumns>
-                    </output>
-                    <output
-                      refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                      isErrorOut="true"
-                      name="OLE DB Source Error Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[costamp]"
-                          codePage="1252"
-                          dataType="str"
-                          length="25"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[costamp]"
-                          name="costamp" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[numerodocumento]"
-                          codePage="1252"
-                          dataType="str"
-                          length="20"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[numerodocumento]"
-                          name="numerodocumento" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[frete]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[frete]"
-                          name="frete"
-                          precision="19"
-                          scale="6" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[totaliva]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[totaliva]"
-                          name="totaliva"
-                          precision="19"
-                          scale="6" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[valordesconto]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[valordesconto]"
-                          name="valordesconto"
-                          precision="19"
-                          scale="6" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[precounitario]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[precounitario]"
-                          name="precounitario"
-                          precision="19"
-                          scale="6" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[valoriliquido]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[valoriliquido]"
-                          name="valoriliquido"
-                          precision="19"
-                          scale="6" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[moeda]"
-                          dataType="wstr"
-                          length="20"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[moeda]"
-                          name="moeda" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[quantidade]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[quantidade]"
-                          name="quantidade"
-                          precision="14"
-                          scale="4" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[totaliliquidoprods]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[totaliliquidoprods]"
-                          name="totaliliquidoprods"
-                          precision="30"
-                          scale="17" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[totalbaseincidenciaiva]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[totalbaseincidenciaiva]"
-                          name="totalbaseincidenciaiva"
-                          precision="30"
-                          scale="17" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[valortotal]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[valortotal]"
-                          name="valortotal"
-                          precision="30"
-                          scale="17" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[empresaKey]"
-                          dataType="i4"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[empresaKey]"
-                          name="empresaKey" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[produto]"
-                          codePage="1252"
-                          dataType="str"
-                          length="18"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[produto]"
-                          name="produto" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[datadocumento]"
-                          dataType="dbDate"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[datadocumento]"
-                          name="datadocumento" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[funcionario]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[funcionario]"
-                          name="funcionario"
-                          precision="6" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[datapagamento]"
-                          dataType="dbDate"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[datapagamento]"
-                          name="datapagamento" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[centrocustoDesc]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[centrocustoDesc]"
-                          name="centrocustoDesc" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[zonaDesc]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[zonaDesc]"
-                          name="zonaDesc" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[armazemDesc]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[armazemDesc]"
-                          name="armazemDesc" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[iva]"
-                          dataType="numeric"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[iva]"
-                          name="iva"
-                          precision="19"
-                          scale="2" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
               </components>
               <paths>
                 <path
@@ -23430,6 +23845,11 @@ WHERE produto is not null</property>
                   endId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup moedaKey.Inputs[Lookup Input]"
                   name="Derived Column Output"
                   startId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\load Business Fact With Dependencies\FactDocumentosCompra.Paths[Derived Column Output1]"
+                  endId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input]"
+                  name="Derived Column Output"
+                  startId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\load Business Fact With Dependencies\FactDocumentosCompra.Paths[Lookup Match Output]"
                   endId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dateKey.Inputs[Lookup Input]"
@@ -23462,14 +23882,14 @@ WHERE produto is not null</property>
                   startId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup descricaoKey.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\load Business Fact With Dependencies\FactDocumentosCompra.Paths[Lookup No Match Output]"
-                  endId="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras.Inputs[OLE DB Destination Input]"
+                  endId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column.Inputs[Derived Column Input]"
                   name="Lookup No Match Output"
                   startId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Fact exists?.Outputs[Lookup No Match Output]" />
                 <path
                   refId="Package\load Business Fact With Dependencies\FactDocumentosCompra.Paths[OLE DB Source Output]"
                   endId="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup productKey.Inputs[Lookup Input]"
                   name="OLE DB Source Output"
-                  startId="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source.Outputs[OLE DB Source Output]" />
+                  startId="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras.Outputs[OLE DB Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -36627,7 +37047,7 @@ WHERE produto is not null</property>
     design-time-name="Package\Load Business Dimensions\DimEmpresa is emtpy?">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="130,42"
           Id="Package\Load Business Dimensions\DimEmpresa is emtpy?\Row Count"
@@ -36655,7 +37075,9 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37293,42 +37715,6 @@ WHERE produto is not null</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Historical Attribute Inserts Output1]"
-          TopLeft="989.7,453.499999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-411.8,60.0000000000002"
-              Start="0,0"
-              End="-411.8,52.5000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.5044136191678" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.5044136191678"
-                    Point2="0,20.5044136191678"
-                    Point3="-4,20.5044136191678" />
-                  <mssgle:LineSegment
-                    End="-407.8,20.5044136191678" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-407.8,20.5044136191678"
-                    Point2="-411.8,20.5044136191678"
-                    Point3="-411.8,24.5044136191678" />
-                  <mssgle:LineSegment
-                    End="-411.8,52.5000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-280.95638671875,25.5044136191678,150.1127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Historical Attribute Inserts Output]"
           TopLeft="1317.5,564.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -37360,6 +37746,42 @@ WHERE produto is not null</property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-104.25638671875,19.3389830508474,150.1127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFornecedor.Paths[Historical Attribute Inserts Output]"
+          TopLeft="989.7,453.499999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-411.8,60.0000000000002"
+              Start="0,0"
+              End="-411.8,52.5000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5044136191678" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.5044136191678"
+                    Point2="0,20.5044136191678"
+                    Point3="-4,20.5044136191678" />
+                  <mssgle:LineSegment
+                    End="-407.8,20.5044136191678" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-407.8,20.5044136191678"
+                    Point2="-411.8,20.5044136191678"
+                    Point3="-411.8,24.5044136191678" />
+                  <mssgle:LineSegment
+                    End="-411.8,52.5000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-280.95638671875,25.5044136191678,150.1127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -38598,42 +39020,6 @@ WHERE produto is not null</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Historical Attribute Inserts Output1]"
-          TopLeft="771.75,370">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-35.25,60"
-              Start="0,0"
-              End="-35.25,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4413793103448" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4413793103448"
-                    Point2="0,20.4413793103448"
-                    Point3="-4,20.4413793103448" />
-                  <mssgle:LineSegment
-                    End="-31.25,20.4413793103448" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-31.25,20.4413793103448"
-                    Point2="-35.25,20.4413793103448"
-                    Point3="-35.25,24.4413793103448" />
-                  <mssgle:LineSegment
-                    End="-35.25,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-92.68138671875,25.4413793103448,150.1127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Historical Attribute Inserts Output]"
           TopLeft="340.75,483">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -38665,6 +39051,42 @@ WHERE produto is not null</property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-13.18138671875,25.4526166902405,150.1127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimFuncionarios.Paths[Historical Attribute Inserts Output]"
+          TopLeft="771.75,370">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-35.25,60"
+              Start="0,0"
+              End="-35.25,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4413793103448" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4413793103448"
+                    Point2="0,20.4413793103448"
+                    Point3="-4,20.4413793103448" />
+                  <mssgle:LineSegment
+                    End="-31.25,20.4413793103448" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-31.25,20.4413793103448"
+                    Point2="-35.25,20.4413793103448"
+                    Point3="-35.25,24.4413793103448" />
+                  <mssgle:LineSegment
+                    End="-35.25,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-92.68138671875,25.4413793103448,150.1127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -39356,9 +39778,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39380,9 +39800,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39404,9 +39822,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39428,9 +39844,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39464,9 +39878,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39500,9 +39912,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39567,78 +39977,6 @@ WHERE produto is not null</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output6]"
-          TopLeft="304,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output5]"
-          TopLeft="304,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output4]"
-          TopLeft="304,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output3]"
           TopLeft="874.333333333333,364.166666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -39662,8 +40000,8 @@ WHERE produto is not null</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output2]"
-          TopLeft="874.333333333333,160.166666666666">
+          Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output5]"
+          TopLeft="304,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -39686,7 +40024,7 @@ WHERE produto is not null</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output1]"
+          Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output4]"
           TopLeft="874.333333333333,262.166666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -39710,8 +40048,80 @@ WHERE produto is not null</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output3]"
+          TopLeft="874.333333333333,160.166666666666">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output2]"
+          TopLeft="304,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output1]"
+          TopLeft="304,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Load Business Dimensions with dependencies\DimProdutos.Paths[Lookup Match Output]"
-          TopLeft="304,251.5">
+          TopLeft="304,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -39824,9 +40234,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39848,9 +40256,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39884,9 +40290,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39920,9 +40324,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39956,9 +40358,7 @@ WHERE produto is not null</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40489,10 +40889,6 @@ WHERE produto is not null</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="207,42"
-          Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dataPagamentoKey"
-          TopLeft="167,502" />
-        <NodeLayout
           Size="177,42"
           Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup descricaoKey"
           TopLeft="187,591" />
@@ -40503,15 +40899,11 @@ WHERE produto is not null</property>
         <NodeLayout
           Size="198,42"
           Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\FactDocumentosCompras"
-          TopLeft="171,747" />
+          TopLeft="173,794" />
         <NodeLayout
           Size="133,42"
           Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\Fact exists?"
           TopLeft="204,660" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup funcionarioKey"
-          TopLeft="173,262" />
         <NodeLayout
           Size="154,42"
           Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dateKey"
@@ -40521,69 +40913,41 @@ WHERE produto is not null</property>
           Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup moedaKey"
           TopLeft="182,409" />
         <NodeLayout
-          Size="150,42"
-          Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source"
-          TopLeft="219,11" />
+          Size="186,42"
+          Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup funcionarioKey"
+          TopLeft="173,262" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras"
+          TopLeft="172,14" />
         <NodeLayout
           Size="188,42"
           Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column Moeda"
           TopLeft="171,335" />
+        <NodeLayout
+          Size="207,42"
+          Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dataPagamentoKey"
+          TopLeft="167,502" />
         <EdgeLayout
           Id="Package\load Business Fact With Dependencies\FactDocumentosCompra.Paths[OLE DB Source Output]"
-          TopLeft="294,53">
+          TopLeft="261.5,56">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-32.5,45"
+              EndConnector="0,42"
               Start="0,0"
-              End="-32.5,37.5">
+              End="0,34.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.5"
-                    Point2="0,22.5"
-                    Point3="-4,22.5" />
-                  <mssgle:LineSegment
-                    End="-28.5,22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-28.5,22.5"
-                    Point2="-32.5,22.5"
-                    Point3="-32.5,26.5" />
-                  <mssgle:LineSegment
-                    End="-32.5,37.5" />
+                    End="0,34.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load Business Fact With Dependencies\FactDocumentosCompra.Paths[Lookup No Match Output]"
-          TopLeft="270.25,702">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45"
-              Start="0,0"
-              End="0,37.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,12.9453125,111.6127734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40702,7 +41066,7 @@ WHERE produto is not null</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-57.0600390625,9.25,114.120078125,16"
+              BoundingBox="-48.19138671875,11.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -40752,32 +41116,77 @@ WHERE produto is not null</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="154,42"
+          Id="Package\load Business Fact With Dependencies\FactDocumentosCompra\Derived Column"
+          TopLeft="213,722" />
+        <EdgeLayout
+          Id="Package\load Business Fact With Dependencies\FactDocumentosCompra.Paths[Derived Column Output1]"
+          TopLeft="290,764">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18,30"
+              Start="0,0"
+              End="-18,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11"
+                    Point2="0,15"
+                    Point3="-4,15" />
+                  <mssgle:LineSegment
+                    End="-14,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14,15"
+                    Point2="-18,15"
+                    Point3="-18,19" />
+                  <mssgle:LineSegment
+                    End="-18,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load Business Fact With Dependencies\FactDocumentosCompra.Paths[Lookup No Match Output]"
+          TopLeft="337,681">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-47,41"
+              Start="0,0"
+              End="-47,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-43,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-43,0"
+                    Point2="-47,0"
+                    Point3="-47,4" />
+                  <mssgle:LineSegment
+                    End="-47,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-102.80638671875,-17.609375,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dataPagamentoKey">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimDate]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup descricaoKey">
     <Properties>
@@ -40861,29 +41270,6 @@ WHERE produto is not null</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup funcionarioKey">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimFuncionarios]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dateKey">
     <Properties>
       <Property>
@@ -40930,8 +41316,54 @@ WHERE produto is not null</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\load Business Fact With Dependencies\FactDocumentosCompra\OLE DB Source">
+    design-time-name="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup funcionarioKey">
     <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimFuncionarios]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\load Business Fact With Dependencies\FactDocumentosCompra\DocumentosCompras">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\load Business Fact With Dependencies\FactDocumentosCompra\Lookup dataPagamentoKey">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimDate]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
