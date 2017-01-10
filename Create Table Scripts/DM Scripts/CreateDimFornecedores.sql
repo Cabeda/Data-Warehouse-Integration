@@ -18,7 +18,7 @@
 			[vencimento] [numeric](3, 0) NOT NULL,
 			[funcaocontacto] [varchar](15) NOT NULL,
 			[email] [varchar](45) NOT NULL,
-			[nacionalidadeDesc] [int] NOT NULL,
+			[nacionalidadeDesc] [varchar](20) NOT NULL,
 			[telemovel] [varchar](45) NOT NULL,
 			[saldo] [numeric](19, 6) NOT NULL,
 			[plafond] [numeric](19, 6) NOT NULL,
