@@ -17,7 +17,7 @@ CREATE TABLE [dbo].[FactDocumentosCompras]
 		[quantidade] [numeric](14, 4) NOT NULL,
 		[precoUnitarioSTD] [numeric](19, 6) NOT NULL,
 		[precoUnitarioLocal] [numeric](19, 6) NOT NULL,
-		[valorIliquidoSTD] [numeric](19, 6) NOT NULL,
+		[valorIliquidoSTD] [numeric](19, 6) NOT NULL, 
 		[valorIliquidoLocal] [numeric](19, 6) NOT NULL,
 		[totalbaseincidenciaivaSTD] [numeric](19, 6) NOT NULL,
 		[totalbaseincidenciaivaLocal] [numeric](19, 6) NOT NULL,

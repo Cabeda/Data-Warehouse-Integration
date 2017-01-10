@@ -4,7 +4,7 @@ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimProdutos')
 		[productKey] [int] IDENTITY(1,1) NOT NULL,
 		[referencia] [nvarchar](18) NOT NULL,
 		[designacao] [nvarchar](60) NOT NULL,
-		[nomefamilia] [nvarchar](60) NOT NULL,
+		[nomefamilia] [nvarchar](60) NOT NULL, 
 		[margemfamilia] [numeric](16, 3) NOT NULL,
 		[stock] [numeric](13, 3) NOT NULL,
 		[precovenda] [numeric](19, 6) NOT NULL,

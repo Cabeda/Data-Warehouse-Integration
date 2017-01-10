@@ -1,4 +1,4 @@
-IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimDescricao')	
+ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimDescricao')	
 	CREATE TABLE [dbo].[DimDescricao]
 	(
 		[descricaoKey] [int] IDENTITY(1,1) NOT NULL,

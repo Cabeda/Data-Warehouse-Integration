@@ -1,4 +1,4 @@
-IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimMoeda')	
+ IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimMoeda')	
 	CREATE TABLE [dbo].[DimMoeda]
 	(
 		[moedaKey] [int] IDENTITY(1,1) NOT NULL,

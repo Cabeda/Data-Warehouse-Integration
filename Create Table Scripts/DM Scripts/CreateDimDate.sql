@@ -12,7 +12,7 @@ BEGIN
 		[monthName] [varchar](10) NOT NULL,
 		[week] [tinyint] NOT NULL,
 		[dayNumberOfYear] [int] NOT NULL,
-		[dayNumberOfMonth] [tinyint] NOT NULL,
+		[dayNumberOfMonth] [tinyint] NOT NULL,  
 		[dayNumberOfWeek] [tinyint] NOT NULL,
 		[lastDayOfMonth] [tinyint] NOT NULL,
 		[dayOfWeek] [varchar](10) NOT NULL,

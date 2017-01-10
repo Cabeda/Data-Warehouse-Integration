@@ -26,7 +26,7 @@
 			[dataCriacao] [date] NOT NULL,
 			[dataUltGravacao] [date] NOT NULL,
 			[effectiveDate] [date] NOT NULL,
-			[expiredDate] [date] NOT NULL,
+			[expiredDate] [date] NOT NULL,    
 			[isCurrent] [int] NOT NULL
 			CONSTRAINT [PK_DimFornecedores] PRIMARY KEY CLUSTERED 
 		(
